@@ -17,7 +17,7 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
     <meta name="citation_author" content="Andrew G. York">
     <meta name="citation_publication_date" content="2023/01/01">
     <meta name="citation_journal_title" content="Github.io">
-    <meta name="citation_pdf_url" content="https://andrewgyork.github.io/Magnetofluorescence/Magnetofluorescence.pdf">
+    <meta name="citation_pdf_url" content="https://andrewgyork.github.io/gfp_magnetofluorescence/Magnetofluorescence.pdf">
     <title>Magnetofluorescence</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
@@ -41,9 +41,9 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
       <header>
         <h1 class="header">Magneto- fluorescence</h1>
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/AndrewGYork/Magnetofluorescence/archive/refs/heads/main.zip">Download ZIP</a></li>
-          <li><a class="buttons github" href="https://github.com/AndrewGYork/Magnetofluorescence">View On GitHub</a></li>
-          <li><a class="buttons pdf" href="./Magnetofluorescence.pdf">Download PDF</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/AndrewGYork/gfp_magnetofluorescence/archive/refs/heads/main.zip">Download ZIP</a></li>
+          <li><a class="buttons github" href="https://github.com/AndrewGYork/gfp_magnetofluorescence">View On GitHub</a></li>
+          <li><a class="buttons pdf" href="./gfp_magnetofluorescence.pdf">Download PDF</a></li>
         </ul>
         <p class="header">This project is maintained by <a class="header name" href="https://github.com/marimar128">Maria Ingaramo</a> in the <a class="header name" href="http://andrewgyork.github.io/">York lab</a>, and was funded by <a class="header name" href="https://www.calicolabs.com/">Calico Life Sciences LLC</a></p>
       </header>
@@ -66,9 +66,11 @@ The real text begins here.
   </h4>
 </a>
 
+<!--
 <p class="abstract">
  We show that several GFP-like proteins' fluorescence can be modulated by small magnetic fields in the presence of specific cofactors. We identify FMN and Cinnavalininate as small metabolite cofactors for mScarlet, and FAD, Hydroxykynurenine, 3-Hydroxyanthranilic acid and Cinnavalininate as cofactors for EGFP. We also show that magnetic field modulation of fluorescence can be achieved in biological contexts like mammalian cells using a FlavinTag fused to EGFP and co-expression of a flavin transferase. We expect that with further engineering, the <em>in vivo</em> compatibility of the effect will open the door to countless applications like resolution enhancement, imaging in scattering samples, single color multiplexing, optically detected magnetic resonance, and maybe even magneto-genetics. (optically detected electron spin resonance)
 </p>
+-->
 
 <h4>Peer review status</h4>
 <p class="abstract">Pre-print published: 2023
@@ -78,11 +80,11 @@ The real text begins here.
 
 <p></p>
 <p><em>
-  In memory of George H. Patterson.</em>
+In memory of George H. Patterson, Andrew and Maria's deeply missed friend and advisor. For having known his creative mind and his caring heart, we will always be thankful.</em>
 </p>
 
 <h3 class="onlyprint">
-Note that this is a limited PDF or print version; animated and interactive figures are disabled. For the full version of this article, please visit <a href="https://andrewgyork.github.io/magnetofluorescence">https://andrewgyork.github.io/magnetofluorescence</a></h3>
+Note that this is a limited PDF or print version; animated and interactive figures are disabled. For the full version of this article, please visit <a href="https://andrewgyork.github.io/gfp_magnetofluorescence">https://andrewgyork.github.io/magnetofluorescence</a></h3>
 
 <noscript>
 <h3>Your browser doesn't seem to support Javascript. This document uses Javascript for interactive figures, math typesetting, and to automatically generate the reference list. Either activate Javascript, or use the "Download PDF" link above if you want properly typeset math and a reference list.
@@ -115,7 +117,9 @@ We first considered the cryptochrome/photolyase family (CRY/PHL)
 but found that they fail badly as candidate ancestors. For example, CRY fluorescence is magnetoresponsive 
 [<a class="citation" href="https://doi.org/10.1038/nchem.2447" title="Chemical amplification of magnetic field effects relevant to avian magnetoreception; Kattnig, D.R., Evans, E.W., Déjean, V., Dodson, C.A., Wallace, M.I., Mackenzie, S.R., Timmel, C.R. &amp; Hore, P.J.; Nature Chemistry 8 384-391 (2016)">Kattnig 2016</a>,
 <a class="citation" href="https://doi.org/10.1039/D0SC01986K" title="Detection of magnetic field effects by confocal microscopy; Déjean, V., Konowalczyk, M., Gravell, J., Golesworthy, M. J., Gunn, C., Pompe, N., Foster Vander Elst, O., Tan, K. J., Oxborrow, M., Aarts, D. G. A. L., Mackenzie, S. R., & Timmel, C. R.; Chemical science 11, 7772–7781 (2020)">Dejean 2020</a>];
-perhaps CRY could act as a magnetically-actuated FRET-based "gate" between a luminescent protein and an optogenetic tool (TODO: cite luminescence/LOV optogenetics). Unfortunately, this magnetoeffect is small (0.05% - 0.75%), and CRY is at least a thousandfold(!) dimmer than GFP. Transient absorption of CRY/PHL is also magnetoresponsive 
+perhaps CRY could act as a magnetically-actuated FRET-based "gate" between a luminescent protein and an optogenetic tool 
+[<a class="citation" href="https://doi.org/10.1101/2023.03.09.531939" title="Engineered allostery in light-regulated LOV-Turbo enables precise spatiotemporal control of proximity labeling in living cells; Lee, S., Cheah, J.S., Zhao, B., Xu, C., Roh, H., Kim, C.K., Cho, K.F., Udeshi, N.D., Carr, S.A., &amp; Ting, A.Y.; bioRxiv 2023.03.09.531939 (2023).">Lee 2023</a>]
+. Unfortunately, this magnetoeffect is small (0.05% - 0.75%), and CRY is at least a thousandfold(!) dimmer than GFP. Transient absorption of CRY/PHL is also magnetoresponsive 
 [<a class="citation" href="https://doi.org/10.1073/pnas.1118959109" title="Magnetically sensitive light-induced reactions in cryptochrome are consistent with its proposed role as a magnetoreceptor; Maeda, K., Robinson, A. J., Henbest, K. B., Hogben, H. J., Biskup, T., Ahmad, M., Schleicher, E., Weber, S., Timmel, C. R., &amp; Hore, P. J.; Proceedings of the National Academy of Sciences of the United States of America 109, 4774–4779 (2012)">Maeda 2012</a>], 
 but we don’t see how transient absorption can control downstream machinery. Furthermore, these effects seem to require some combination of near-freezing temperatures and toxic conditions (e.g. potassium ferricyanide). CRY conformation and dimerization is optically responsive 
 [<a class="citation" href="https://doi.org/10.1038/nmeth.1524" title="Rapid blue-light–mediated induction of protein interactions in living cells; Kennedy, M.J., Hughes, R.M., Peteya, L.A., Schwartz, J.W., Ehlers, M.D. &amp; Tucker, L.C.; Nature Methods 7, 973–975 (2010)">Kennedy 2010</a>], 
@@ -157,15 +161,15 @@ The fluorescence intensity of EGFP responds to magnetic fields in <em>E. coli</e
 </h4>
 
 <p>
-We first noticed magnetofluorescent response from <em>E. coli</em> expressing <a href="https://www.fpbase.org/protein/egfp/">EGFP</a>, using a <a href="TODO link to appendix with details of this experiment">simple epifluorescence microscope</a> with a servomotor-mounted magnet above the sample. The fluorescent brightness varied slightly but unmistakably as the field alternated from ambient to ~10 mT. Of course, delightful but unexpected results are almost always artifacts, so we began <a href="TODO link to appendix debugging section">debugging</a>.
+We first noticed magnetofluorescent response from <em>E. coli</em> expressing <a href="https://www.fpbase.org/protein/egfp/">EGFP</a>, using a <a href="./appendix.html#appendix">simple epifluorescence microscope</a> with a servomotor-mounted magnet above the sample. The fluorescent brightness varied slightly but unmistakably as the field alternated from ambient to ~10 mT. Of course, delightful but unexpected results are almost always artifacts, so we began <a href="./appendix.html#debugging">debugging</a>.
 </p>
 
 <p>
-Pure proteins are simpler to debug than bacteria, but to our surprise, when we <a href="TODO appendix how did we purify?">purified</a> the EGFP, the magnetofluorescent effect disappeared (<a href="#EGFP_cartoon" target="_self">Figure 1</a> with <code>Sample: EGFP alone</code> selected). Neither purified EGFP nor EGFP-negative bacterial lysate displayed measurable magnetofluorescence, but mixing the two restored the effect. Filtering &lt;7 kDa molecules out of the lysate eliminated magnetoresponse, so we suspected some small molecule(s) in the lysate were acting as cofactors for EGFP magnetofluorescence.
+Pure proteins are simpler to debug than bacteria, but to our surprise, when we <a href="./appendix.html#sample_prep">purified</a> the EGFP, the magnetofluorescent effect disappeared (<a href="#EGFP_cartoon" target="_self">Figure 1</a> with <code>Sample: EGFP alone</code> selected). Neither purified EGFP nor EGFP-negative bacterial lysate displayed measurable magnetofluorescence, but mixing the two restored the effect. Filtering &lt;7 kDa molecules out of the lysate eliminated magnetoresponse, so we suspected some small molecule(s) in the lysate were acting as cofactors for EGFP magnetofluorescence.
 </p>
 
 <p>
-On a hunch, we screened a variety of metals, metabolites, and vitamins as potential cofactors for EGFP magnetoresponse. After a long string of negative results, we finally found a weak hit from an EGFP/riboflavin mixture, which inspired us to try other (more soluble) flavins. A mixture of purified EGFP and flavin adenine dinucleotide (FAD) yielded an exciting result: the EGFP fluorescence intensity varied by ~1% in response to a ~10 mT field, in room-temperature, nontoxic <a href="TODO: link to supmat">aqueous buffer</a>! (<a href="#EGFP_cartoon" target="_self">Figure 1</a> with <code>Sample: EGFP plus FAD photoproduct in vitro</code> selected).
+On a hunch, we screened a variety of metals, metabolites, and vitamins as potential cofactors for EGFP magnetoresponse. After a long string of negative results, we finally found a weak hit from an EGFP/riboflavin mixture, which inspired us to try other (more soluble) flavins. A mixture of purified EGFP and flavin adenine dinucleotide (FAD) yielded an exciting result: the EGFP fluorescence intensity varied by ~1% in response to a ~10 mT field, in room-temperature, nontoxic <a href="./appendix.html#exp_design">aqueous buffer</a>! (<a href="#EGFP_cartoon" target="_self">Figure 1</a> with <code>Sample: EGFP plus FAD photoproduct in vitro</code> selected).
 </p>
 
 <h4>
@@ -175,7 +179,7 @@ EGFP-FlavinTag: a candidate ancestor for the magnetogenetic toolbox
 <p>
 FAD is an ideal cofactor for our purposes. Flavins aren't just nontoxic - they're ubiquitous, already present in most cells and tissues. Even better, we can use the FlavinTag system 
 [<a class="citation" href="https://doi.org/10.1021/acs.bioconjchem.1c00306" title="Flavin-tag: A Facile Method for Site-Specific Labeling of Proteins with a Flavin Fluorophore; Tong, Y., Lee, M., Drenth, J., &amp; Fraaije, M. W.; Bioconjugate chemistry 32, 1559–1563 (2021)">Tong 2021</a>]
- to <a href="TODO: describe how you made the flavintag gfp">covalently bind</a> flavin to EGFP, producing a simple genetically-expressed biocompatible magnetically-controlled fluorescent molecule (Figure 1 with <code>EGFP-FlavinTag in E. coli</code> selected). From an engineering perspective, this is an excellent candidate ancestor for magnetogenetic tools: a bright, nontoxic, environmentally robust fluorophore suitable for controlling downstream optogenetic machinery via FRET, building on the vast and mature body of GFP-related technology. The intensity modulation (~0.25% at ~10 mT) is much weaker than we'd prefer, but our construct is completely unoptimized for magnetic response, and 
+ to <a href="./appendix.html#sequences">covalently bind</a> flavin to EGFP, producing a simple genetically-expressed biocompatible magnetically-controlled fluorescent molecule (Figure 1 with <code>EGFP-FlavinTag in E. coli</code> selected). From an engineering perspective, this is an excellent candidate ancestor for magnetogenetic tools: a bright, nontoxic, environmentally robust fluorophore suitable for controlling downstream optogenetic machinery via FRET, building on the vast and mature body of GFP-related technology. The intensity modulation (~0.25% at ~10 mT) is much weaker than we'd prefer, but our construct is completely unoptimized for magnetic response, and 
  [<a class="citation" href="https://doi.org/10.1021/nl202950h" title="Mapping Nanomagnetic Fields Using a Radical Pair Reaction; Lee, H., Yang, N. &amp; Cohen, A.E.; Nano Letters 11, 5367-5372 (2011)">Lee 2011</a>]
   gives us hope that this could improve substantially with further engineering.
 </p>
@@ -198,17 +202,21 @@ FAD is an ideal cofactor for our purposes. Flavins aren't just nontoxic - they'r
   </select></td>
     </tr>
 </table>
- <figcaption><strong>Figure 1. Conceptual representation of the experimental set up. </strong>We monitor the fluorescence of EGFP/cofactor mixtures under continuous illumination while we change the strength of the magnetic field by moving a permanent magnet. The drop-down menu depicts hydroxykynurenine, 3-hydroxyanthranilic acid and cinnavalininate, which are small molecules other than FAD capable of rendering EGFP fluorescence magnetosensitive.
+ <figcaption>
+
+  <strong>Figure 1. Conceptual representation of the experimental set up. </strong>
+  <!--We monitor the fluorescence of EGFP/cofactor mixtures under continuous illumination while we change the strength of the magnetic field by moving a permanent magnet. The drop-down menu depicts hydroxykynurenine, 3-hydroxyanthranilic acid and cinnavalininate, which are small molecules other than FAD capable of rendering EGFP fluorescence magnetosensitive.
 
   <strong>EGFP fluorescence responds to magnetic fields in the presence of FAD.</strong>
   We imaged EGFP bound to agarose Ni-NTA beads in the presence and absence of 1 mM FAD through a 540 nm emission filter. The increased magnetic field, where the fluorescence goes down more rapidly, are highlighted on the graph using dark grey vertical shading. Neither EGFP or FAD alone show a response to the changes in magnetic field that happen every 5 seconds (drop-down menu). In contrast, the EGFP/FAD mixture decreases fluorescence as the magnetic field is increased. The traces of compounds other than FAD that render EGFP fluorescence magnetic field sensitive are shown in the drop down menu.
 
   See the Appendix for <a href="./appendix.html#EGFP_power_figure">power</a> and <a href="./appendix.html#EGFP_FAD_concentration_figure">concentration</a> dependence.
+-->
  </figcaption>
 </figure><p></p>
 
 <p>
-EGFP-FlavinTag is magnetoresponsive <em>in vitro</em>, and enzymatic <a href="TODO: link to the appendix">removal of the FlavinTag</a> eliminates the magnetoresponse as expected. As shown in Figure 1, EGFP-FlavinTag fluorescence is also magnetoresponsive in living bacteria. Note that while <em>E. coli</em> lysate inspired our discovery of EGFP/flavin magnetofluorescence, this does not mean that flavin was the (only) cofactor in the lysate; we suspect there are additional cofactors in <em>E. coli</em> that we have yet to discover.
+EGFP-FlavinTag is magnetoresponsive <em>in vitro</em>, and enzymatic <a href="./appendix.html#EGFP_TEV_figure">removal of the FlavinTag</a> eliminates the magnetoresponse as expected. As shown in Figure 1, EGFP-FlavinTag fluorescence is also magnetoresponsive in living bacteria. Note that while <em>E. coli</em> lysate inspired our discovery of EGFP/flavin magnetofluorescence, this does not mean that flavin was the (only) cofactor in the lysate; we suspect there are additional cofactors in <em>E. coli</em> that we have yet to discover.
 </p>
 
 <p>
@@ -223,15 +231,15 @@ Flavins are also the cryptochrome (magneto)fluorescent cofactor. This is highly 
 The fluorescence intensity of EGFP-FlavinTag responds to magnetic fields <em>in vivo</em>
 </h4>
 <p>
-Our ultimate goal is to enable magnetogenetics in mammals, so we tested EGFP-FlavinTag in cultured mammalian cells. As illustrated conceptually in Figure 2, the <a href="TODO: link to supmat description of mammal cell details">setup</a> is similar to our <em>E. coli</em> work, except now the EGFP-FlavinTag is expressed in COS7 cells, and targeted to the interior of the mitochondria via a TODO sequence.
+Our ultimate goal is to enable magnetogenetics in mammals, so we tested EGFP-FlavinTag in cultured mammalian cells. As illustrated conceptually in Figure 2, the <a href="./appendix.html#sample_prep_mam">setup</a> is similar to our <em>E. coli</em> work, except now the EGFP-FlavinTag is expressed in COS7 cells, and targeted to the interior of the mitochondria via a COX8A sequence.
 </p>
 
 <figure id="EGFP_invivo_figure">
 <img src="./images/cartoon/EGFP_FAD_mammalian.gif" alt="EGFP mammalian cartoon figure" id="EGFP_mammalian_cartoon"  width="85%" style="display:block;margin-left:auto;margin-right:auto;">
 <img src="./images/mammalian_cells/x.gif" alt="EGFP mammalian figure" id="EGFP_mammalian_data"width="100%" style="display:block;margin-left:auto;margin-right:auto;">
- <figcaption><strong>Figure 2. Cartoon representation of the experimental design to investigate magnetic field modulation of EGFP fluorescence in mammalian cells.</strong>
-  <strong>Figure 4: Magnetic field modulation of EGFP fluorescence <em>in vivo</em>. </strong>
-  Cos7 cells expressing mitochondrial EGFP-FlavinTag and the flavin transferase enzyme ApbE were imaged continuously. An increase in the magnetic field (as shown in gray on the trace) induces a decrease in fluorescence.
+ <figcaption><strong>Figure 2. </strong>
+  <!--Figure 2: Cartoon representation of the experimental design to investigate magnetic field modulation of EGFP fluorescence in mammalian cells. Magnetic field modulation of EGFP fluorescence <em>in vivo</em>. 
+  Cos7 cells expressing mitochondrial EGFP-FlavinTag and the flavin transferase enzyme ApbE were imaged continuously. An increase in the magnetic field (as shown in gray on the trace) induces a decrease in fluorescence.-->
  </figcaption>
 </figure><p></p>
 
@@ -266,7 +274,7 @@ We also expect red fluorophores like mScarlet will be especially important for m
 
 <figure id="scarlet_cartoon_figure">
 <img src="./images/cartoon/scarlet_FMN.gif" alt="scarlet cartoon figure" id="scarlet_cartoon">
-<table class="figure_scarlet_cartoon">
+<table class="figure_controls">
   <tr>
   <td>Sample: </td><td><select id="scarlet_cartoon_traces" onchange="update_scarlet_cartoon_figure()">
     <option value="scarlet_FMN.gif" selected="selected">mScarlet + FMN photoproduct</option>
@@ -275,8 +283,12 @@ We also expect red fluorophores like mScarlet will be especially important for m
   </select></td>
     </tr>
 </table>
- <figcaption><strong>Additional compounds that induce mScarlet fluorescence magnetic field dependence.</strong>
+ <figcaption> <strong>Figure 3.</strong>
+<!--
+  <strong>Additional compounds that induce mScarlet fluorescence magnetic field dependence.</strong>
  WST-8, Cinnavalininate.
+-->
+
  </figcaption>
 </figure><p></p>
 
@@ -303,7 +315,11 @@ Unlike EGFP, the excitation/emission spectrum of mScarlet is substantially diffe
   </select></td>
     </tr>
 </table>
- <figcaption><strong>Figure 6: mScarlet protein fluorescence responds to magnetic fields in the presence of FMN if pre-irradiated with 470 nm light.</strong> mScarlet bound to agarose Ni-NTA beads was imaged in the presence and absence of 500 &mu;M FMN through a 700 nm emission filter. During the first ~75 seconds, the sample was irradiated with 470 nm light (green shaded background, <em>'mScarlet + FMN with 470 nm pre-excitation'</em> selected) or not irradiated at all (white shaded background, <em>'mScarlet + FMN without 470 nm pre-excitation'</em> selected). After 75 seconds, the sample was imaged continuously with 550 nm excitation (red shaded background). mScarlet alone, FMN alone, and mScarlet + FMN without 470 nm excitation fluorescence show no response to the changes in magnetic field that happen every 5 seconds throught the whole experiment. In contrast, mScarlet + FMN with 470 nm pre-excitation displays changes in fluorescence, which last for several minutes after 470 nM irradiation stops.
+ <figcaption> <strong>Figure 4.</strong>
+<!--
+  <strong>Figure 6: mScarlet protein fluorescence responds to magnetic fields in the presence of FMN if pre-irradiated with 470 nm light.</strong> mScarlet bound to agarose Ni-NTA beads was imaged in the presence and absence of 500 &mu;M FMN through a 700 nm emission filter. During the first ~75 seconds, the sample was irradiated with 470 nm light (green shaded background, <em>'mScarlet + FMN with 470 nm pre-excitation'</em> selected) or not irradiated at all (white shaded background, <em>'mScarlet + FMN without 470 nm pre-excitation'</em> selected). After 75 seconds, the sample was imaged continuously with 550 nm excitation (red shaded background). mScarlet alone, FMN alone, and mScarlet + FMN without 470 nm excitation fluorescence show no response to the changes in magnetic field that happen every 5 seconds throught the whole experiment. In contrast, mScarlet + FMN with 470 nm pre-excitation displays changes in fluorescence, which last for several minutes after 470 nM irradiation stops.
+
+-->
  </figcaption>
 </figure>
 <p></p>
@@ -319,7 +335,7 @@ Magnetoresponse may be a generic feature of fluorescent proteins
 </h4>
 
 <p>
-We observed small but unmistakable magnetoresponse in <em>E. coli</em> from the LOV-family protein <a href="TODO add protein sequence">AsLOV C450A V416T</a>
+We observed small but unmistakable magnetoresponse in <em>E. coli</em> from the LOV-family protein <a href="./appendix.html#sequences">AsLOV C450A V416T</a>
 [<a class="citation" href="https://doi.org/10.1016/j.chembiol.2012.02.006
 " title="Designing photoswitchable peptides using the AsLOV2 domain; Lungu, O. I., Hallett, R. A., Choi, E. J., Aiken, M. J., Hahn, K. M., &amp; Kuhlman, B.; Chemistry & biology 19, 507–517 (2012)">Lungu 2012</a>].
 This was the first (and only) LOV-family protein we checked, so we were quite surprised to get such an easy "hit" from essentially a shot in the dark. 
@@ -327,15 +343,17 @@ This was the first (and only) LOV-family protein we checked, so we were quite su
 
 <figure id="LOV_figure">
 <img src="./images/e_coli/LOV_coli_main.png" alt="LOV figure" id="LOV_figure">
- <figcaption><strong>Figure 5. LOV domain.</strong>LOV
+ <figcaption><strong>Figure 5.</strong>LOV
  </figcaption>
 </figure><p></p>
 
 <p>
-Remarkably, we've found magnetoresponse in every family of fluorescent proteins we've checked so far (CRY, GFP, and LOV). The CRY/PHL family is arguably the most well-known and well-studied magnetoresponsive fluorophore, but in our hands, also the weakest. From a scientific perspective, this raises fascinating questions. Are most (all?) fluorescent proteins magnetoresponsive, given the right cofactor(s)? If so, why has the field focused almost exclusively on CRY as the putative origin of animal magnetosensation? Are proteins generally magnetoresponsive, but we only notice the fluorescent ones because magnetofluorescence is easy to measure? From an engineering perspective, we're excited by the possibility that LOV-family proteins can be magnetically modulated, since they already form the foundation of so many successful optogenetic tools, and have already been "powered" via BRET (TODO: add citation(s), maybe just a review). We only checked for magnetofluorescent response, but it would be extremely useful if LOV-family magnetoresponse also directly affected conformation or dimerization. Depending on the strength, sturdiness, and evolvability of GFP-family vs. LOV-family magnetoresponse, the LOV family may prove to be a compelling candidate ancestor for magnetogenetics.
+Remarkably, we've found magnetoresponse in every family of fluorescent proteins we've checked so far (CRY, GFP, and LOV). The CRY/PHL family is arguably the most well-known and well-studied magnetoresponsive fluorophore, but in our hands, also the weakest. From a scientific perspective, this raises fascinating questions. Are most (all?) fluorescent proteins magnetoresponsive, given the right cofactor(s)? If so, why has the field focused almost exclusively on CRY as the putative origin of animal magnetosensation? Are proteins generally magnetoresponsive, but we only notice the fluorescent ones because magnetofluorescence is easy to measure? From an engineering perspective, we're excited by the possibility that LOV-family proteins can be magnetically modulated, since they already form the foundation of so many successful optogenetic tools, and have already been "powered" via BRET 
+[<a class="citation" href="https://doi.org/10.1038/nmeth.1229" title="Detection of heteromerization of more than two proteins by sequential BRET-FRET; Carriba, P., Navarro, G., Ciruela, F., Ferré, S., Casadó, V., Agnati, L., Cortés, A., Mallol, J., Fuxe, K., Canela, E. I., Lluís, C., &amp; Franco, R.; Nature methods, 5(8), 727–733.">Carriba 2008</a>,
+<a class="citation" href="https://doi.org/10.1101/2023.03.09.531939" title="Engineered allostery in light-regulated LOV-Turbo enables precise spatiotemporal control of proximity labeling in living cells; Lee, S., Cheah, J.S., Zhao, B., Xu, C., Roh, H., Kim, C.K., Cho, K.F., Udeshi, N.D., Carr, S.A., &amp; Ting, A.Y.; bioRxiv 2023.03.09.531939 (2023).">Lee 2023</a>]. We only checked for magnetofluorescent response, but it would be extremely useful if LOV-family magnetoresponse also directly affected conformation or dimerization. Depending on the strength, sturdiness, and evolvability of GFP-family vs. LOV-family magnetoresponse, the LOV family may prove to be a compelling candidate ancestor for magnetogenetics.
 </p>
 
-
+<!--
 <h4>Discussion</h4>
 
 <p>
@@ -376,6 +394,8 @@ It is tentalizeing to futher explore the possible applications of these types of
 Ksenia Bravaya for directig us to emap. Shaun Burd. Daniel Kattnig. Clarice Aiello. Steven Vogel. Justin carram. Adam Cohen. Hohjai Lee. Steven Boxer. Ashok Ajoy and Zachary Jones. 
 
 </p>
+-->
+
 
 <h3>
 Open-source software</h3>
