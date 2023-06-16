@@ -65,11 +65,47 @@ The real text begins here.
   Abstract
   </h4>
 </a>
-<p>
-TODO
+<p class="abstract">
+We've discovered a simple, nontoxic, biocompatible way to control the brightness of <a href="https://www.fpbase.org/protein/avgfp/">GFP</a>-like fluorescent proteins with modest magnetic fields (~10 mT). Fluorescent proteins which seem magnetically inert (e.g. <a href="https://www.fpbase.org/protein/egfp/">EGFP</a>, <a href="https://www.fpbase.org/protein/mscarlet/">mScarlet</a>) become magnetoresponsive in the presence of an appropriate cofactor (e.g. EGFP-<a href="https://doi.org/10.1021/acs.bioconjchem.1c00306">FlavinTag</a>, or an mScarlet/<a href="https://pubchem.ncbi.nlm.nih.gov/compound/Flavin-mononucleotide">FMN</a> solution). This method works at room-temperature and body-temperature, <em>in vitro</em>, in <em>E. coli</em> and in cultured mammalian cells.
+</p>
+
+<p class="abstract">
+The GFP-family magnetoresponse is weak (\(\Delta F / F \approx 1\%\)), but shows the hallmarks of evolvability. This suggests exciting technological possibilities, both short-term (e.g. lock-in detection, multiplexing) and long-term (e.g. optically-detected MRI, magnetogenetics).
+</p>
+
+<p class="abstract">
+
+We've also discovered weak magnetoresponse from a member of the LOV-domain family. This suggests the possibility that magnetoresponse is a general feature of fluorescent proteins, and not unique to the cryptochrome/photolyase family.
 </p>
 <!--
-<p class="abstract"> TODO: Abstract
+<p class="abstract"> Abstract
+
+
+We discovered a surprisingly easy way to control the brightness of fluorescent proteins with magnetic fields. This raises fascinating scientific questions about the mechanism, and tantalizing technological opportunities for bioengineering.
+
+(first image)
+
+Modest (~mT) fields can give huge (~80%) magnetomodulation for a chemical fluorophore in nonaqueous solvent, but previously known biorelevant/biocompatible magnetoeffects are weak and exotic (e.g. cryptochrome transient absorption).
+doi to nanomagnet Cohen paper, tag @AdamEzraCohen 
+
+(Cohen sup movie 1)
+
+But it turns out, mScarlet mixed with flavin (0.5 mM FMN) is ~2-3% dimmer in a ~10 mT magnetic field - a simple bio-compatible magetically-controlled protein machine!
+
+Other fluorophores (including GFP!) and cofactors (e.g. cinnavalininate instead of flavin) work too.
+
+(scarlet image)
+
+FlavinTagged-GFP gives a convenient, robust biocompatible single-molecule magentofluor (thanks @fraaije1!). Here it is blinking *inside* the mitochondria of a living COS7 cell!
+
+The ~10 mT field is just a strong fridge magnet moved back and forth by an Arduino servo.
+(magnetomito image)
+
+New photophysics unlocks new inventions, like background rejection (blinking magnetofluors vs. nonblinking background) or multiplexing (different mutants equilibrate at different rates). Long-term, we're dreaming of "magnetogenetics": magnetic control of optogenetic circuits!
+
+Different mutants have different magnetoresponse amplitude and rate. We haven't found an effect stronger than ~3% in proteins, but the Cohen work makes us hopeful that this isn't physically impossible. We'd love to engineer the effect to be much stronger. 
+But engineering goes hand in hand with understanding, and we certainly don't yet understand how this works. 
+
  We show that several GFP-like proteins' fluorescence can be modulated by small magnetic fields in the presence of specific cofactors. We identify FMN and Cinnavalininate as small metabolite cofactors for mScarlet, and FAD, Hydroxykynurenine, 3-Hydroxyanthranilic acid and Cinnavalininate as cofactors for EGFP. We also show that magnetic field modulation of fluorescence can be achieved in biological contexts like mammalian cells using a FlavinTag fused to EGFP and co-expression of a flavin transferase. We expect that with further engineering, the <em>in vivo</em> compatibility of the effect will open the door to countless applications like resolution enhancement, imaging in scattering samples, single color multiplexing, optically detected magnetic resonance, and maybe even magneto-genetics. (optically detected electron spin resonance)
 </p>
 -->
@@ -356,17 +392,18 @@ This was the first (and only) LOV-family protein we checked, so we were quite su
 Remarkably, we've found magnetoresponse in every family of fluorescent proteins we've checked so far (CRY, GFP, and LOV). The CRY/PHL family is arguably the most well-known and well-studied magnetoresponsive fluorophore, but in our hands, also the weakest. From a scientific perspective, this raises fascinating questions. Are most (all?) fluorescent proteins magnetoresponsive, given the right cofactor(s)? If so, why has the field focused almost exclusively on CRY as the putative origin of animal magnetosensation? Are proteins generally magnetoresponsive, but we only notice the fluorescent ones because magnetofluorescence is easy to measure? From an engineering perspective, we're excited by the possibility that LOV-family proteins can be magnetically modulated, since they already form the foundation of so many successful optogenetic tools, and have already been "powered" via BRET 
 [<a class="citation" href="https://doi.org/10.1101/2023.03.09.531939" title="Engineered allostery in light-regulated LOV-Turbo enables precise spatiotemporal control of proximity labeling in living cells; Lee, S., Cheah, J.S., Zhao, B., Xu, C., Roh, H., Kim, C.K., Cho, K.F., Udeshi, N.D., Carr, S.A., &amp; Ting, A.Y.; bioRxiv 2023.03.09.531939 (2023).">Lee 2023</a>]. We only checked for magnetofluorescent response, but it would be extremely useful if LOV-family magnetoresponse also directly affected conformation or dimerization. Depending on the strength, sturdiness, and evolvability of GFP-family vs. LOV-family magnetoresponse, the LOV family may prove to be a compelling candidate ancestor for magnetogenetics.
 </p>
-
-
-  
+ 
 <h4>Discussion</h4>
-<p>TODO</p>
+
 <p>
-The central scientific question raised by our observations is obviously: How and why do fluorescent proteins respond to magnetic fields? Every paper we've read that discusses magnetoresponsive proteins and/or fluorophores explains the phenomenon in terms of the "radical pair" mechanism (TODO: cite https://doi.org/10.1524/zpch.1976.101.1-6.371). Like all of these papers, our simple observations here neither prove nor disprove the relevance of this model. We're certainly eager to understand the mechanism behind our observations, and we're happy to have a candidate mechanism, but for now we prefer ignorance over misplaced confidence. 
+The central scientific question raised by our observations is obviously: How and why do fluorescent proteins respond to magnetic fields? Every paper we've read that discusses magnetoresponsive proteins and/or fluorophores explains the phenomenon in terms of the "radical pair" mechanism 
+[<a class="citation" href="https://doi.org/10.1524/zpch.1976.101.1-6.371" title="Magnetic Field Dependence of the Geminate Recombination of Radical Ion Pairs in Polar Solvents; Schulten, K., Staerk, H., Weller, A., Werner, H. &amp; Nickel, B.; Zeitschrift für Physikalische Chemie 101, 371-390 (1976).">Schulten 1976</a>].
+Like all of these papers, our simple observations here neither prove nor disprove the relevance of this model. We're certainly eager to understand the mechanism behind our observations, and we're happy to have a candidate mechanism, but for now we prefer ignorance over misplaced confidence. 
 </p>
 
 <p>
-The central technological question raised by our observations is obviously: What are magnetoresponsive fluorescent proteins good for? In the short-term, a magnetically-switchable fluorophore enables "lock-in dection", meaning a signal that blinks over a background that doesn't, yielding accurate background subtraction. Our magnetoresponse also has a finite equilibration rate, which varies depending on the protein sequence; if this rate is sufficiently independent of the environment, it allows multiplexing, and if not, it allows biosensing (TODO: cite relaxation sensors). Longer term, if magnetically sensitive fluorescent proteins display magnetic resonance (TODO: cite ODMR  10.1007/s11120-009-9407-5), perhaps gradient fields and tuned microwave/RF pulses would allow MRI-like imaging with optical readout in translucent samples, or spatial confinement of magnetogenetic control.
+The central technological question raised by our observations is obviously: What are magnetoresponsive fluorescent proteins good for? In the short-term, a magnetically-switchable fluorophore enables "lock-in dection", meaning a signal that blinks over a background that doesn't, yielding accurate background subtraction. Our magnetoresponse also has a finite equilibration rate, which varies depending on the protein sequence; if this rate is sufficiently independent of the environment, it allows multiplexing, and if not, it allows biosensing [<a class="citation" href="https://doi.org/10.5281/zenodo.5810930" title="Relaxation Sensors; Peksağlam Seidel, Z. Wang, J.C.K., Riegler, J., York, A.G. and Ingaramo, M.; Photosynthesis research 102, 403–414 (2009).">Peksağlam Seidel 2021</a>].
+ Longer term, if magnetically sensitive fluorescent proteins display magnetic resonance [<a class="citation" href="https://doi.org/10.1007/s11120-009-9407-5" title="Optically Detected Magnetic Resonance (ODMR) of photoexcited triplet states; Carbonera D.; Photosynthesis research 102, 403–414 (2009).">Carbonera 2009</a>], perhaps gradient fields and tuned microwave/RF pulses would allow MRI-like imaging with optical readout in translucent samples, or spatial confinement of magnetogenetic control.
 </p>
 
 <p>
