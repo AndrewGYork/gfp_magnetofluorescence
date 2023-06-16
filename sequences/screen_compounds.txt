@@ -1,0 +1,731 @@
+METABOLITES SCREEN:
+Biocytin
+Pterin
+L-Targinine
+2-Methylcitric acid
+Octanoyl-CoA
+Isobutyryl-L-carnitine
+3-Methylglutaconic acid
+Cinnavalininate
+Succinylacetone
+Adenosine 3',5'-diphosphate
+Uridine diphosphategalactose
+6-phosphonatooxy-D-gluconate
+6-Hydroxymelatonin
+dCDP
+Dihydrofolic acid
+L-Palmitoylcarnitine
+Lithocholic acid glycine conjugate
+Ursodeoxycholic acid
+Coenzyme A
+Maleic acid
+gamma-Glutamylcysteine
+2-Amino-3-phosphonopropionic acid
+Dihydrobiopterin
+Beta-D-Fructose 6-phosphate
+Uridine diphosphate glucose
+4-Pyridoxic acid
+Folinic acid
+N,N'-diacetylchitobiose
+NADH
+Inosine triphosphate
+Tetradecanoylcarnitine
+1-Methylnicotinamide
+5a-Pregnane-3,20-dione
+Aminoacetone
+3'-Monoiodo-L-thyronine
+4-Hydroxyphenylacetaldehyde
+Isomaltose
+5-Aminolevulinic acid
+Uridine diphosphate glucuronic acid
+2-Hydroxyestradiol
+5'-Methylthioadenosine
+Oxoadipic acid
+Tetrahydrobiopterin
+Maltopentaose
+Protoporphyrin IX
+Ureidoisobutyric acid
+N-Glycolylneuraminic acid
+3,4-Dihydroxyphenylglycol
+Hydroxyphenyllactic acid
+Vitamin A
+gamma-Glutamylleucine
+S-Adenosylhomocysteine
+Hydroxyphenylacetylglycine
+alpha-Linolenic acid
+Homogentisic acid
+16a-Hydroxyestrone
+2-Hydroxyglutarate
+Leucyl-Glycine
+Maltohexaose
+1-Methylhistidine
+L-Alloisoleucine
+L-Cystathionine
+Erythro-4-hydroxy-L-glutamate(1-)
+N1-Acetylspermidine
+Bilirubin
+5-Methyltetrahydrofolic acid
+FAD
+Citramalic acid
+Hydroxykynurenine
+Sphingosine
+1-Methyladenosine
+(±)-Tryptophan
+Acetylcysteine
+L-alpha-Aminobutyric acid
+5-Methyldeoxycytidine
+N-Acetyl-L-phenylalanine
+Creatinine
+Estriol
+Allantoin
+Indole
+(-)-Limonene
+dIMP
+Alloxan
+Methylsuccinic acid
+N6-Acetyl-L-lysine
+DL-O-Phosphoserine
+Isoleucyl-Glycine
+Spermine
+Anserine
+Glutaconic acid
+9,13-cis-Retinoic acid
+Indole-3-propionic acid
+Glycylproline
+Arachidonic acid
+4-Trimethylammoniobutanoic acid
+dUMP
+Taurocholic acid
+Glutathione
+Levoinositol
+Retinal
+Alloepipregnanolone
+L-Dihydroorotic acid
+Oleic acid
+Nicotinamide riboside
+all-trans-Retinoic acid
+Dodecanedioic acid
+Mevalonic acid
+Serotonin
+6-Dimethylaminopurine
+5-Methoxytryptophol
+7-Methylguanine
+Leucylleucine
+Spermidine
+(R)-3-Hydroxyisobutyric acid
+Galactinol
+IDP
+Glycylvaline
+Glycyl-Phenylalanine
+3-Hydroxyisovaleric acid
+Citicoline
+3-Amino-2-piperidone
+2-Furoylglycine
+Glycerophosphocholine
+Oleoylethanolamide
+D-Lactic acid
+Leucinic acid
+Suberic acid
+Methylglutaric acid
+CDP
+Erythronic acid
+Propionic acid
+Tyrosylglycine
+Flavin mononucleotide
+3-Hydroxybutyric acid
+Trimethylamine N-oxide
+Homocarnosine
+Succinic acid semialdehyde
+5-Hydroxytryptophol
+Pyridoxaminium(1+)
+Maltotetraose
+4-Hydroxynonenal
+Lithocholic acid
+Phenyl acetate
+Homocysteine thiolactone
+Mannose 6-phosphate
+Itaconic acid
+Prostaglandin F1a
+Oxalic acid
+Fumaric acid
+Aldehydo-N-acetyl-D-glucosamine
+Cyclic AMP
+Pseudouridine
+D-Leucic acid
+(R)-beta-Aminoisobutyric acid
+Uridine 3'-monophosphate
+Benzenebutanoic acid
+3-Phosphoglyceric acid
+Metyrosine
+Arachidic acid
+Vitamin K1
+Homocitrulline
+gamma-Glutamylalanine
+N-Formyl-L-methionine
+Glycoursodeoxycholic acid
+Isovalerylglycine
+Indoxyl sulfate
+Leucylalanine
+2-Methylbutyrylglycine
+D-Arginine
+beta-D-Glucose 6-phosphate
+Butyric acid
+L-Homoserine
+Senecioic acid
+2-Methylglutaric acid
+Galactaric acid
+3-O-Methyl-a-methyldopa
+Racemethionine
+Tryptamine
+Phenylacetaldehyde
+3-Methylthiopropionic acid
+Estrone
+1-Methylhistamine
+D-Alanine
+2-Methylhippuric acid
+Chenodeoxycholic acid
+Cholesterol
+N-Acetylserine
+Polylimonene
+Beta-Guanidinopropionic acid
+Leukoaminochrome
+Taurodeoxycholic acid
+Isovaleric acid
+Desaminotyrosine
+Glutaric acid
+4-Hydroxycinnamic acid
+N-Acetyl-L-methionine
+Dihydroxyacetone
+Hippuric acid
+Deoxycholic acid
+Uridine 5'-diphosphate
+D-Alanyl-D-alanine
+Glycyl-glycine
+Maltotriose
+L-3-Cyanoalanine
+(S)-Propane-1,2-diol
+Guanosine triphosphate
+3-Hydroxymethylglutaric acid
+Cytosine
+15(R)-hydroperoxy-EPE
+DL-Homocystine
+Aspartylphenylalanine
+Norepinephrine
+L-Pipecolic acid
+3-Hydroxyglutaric acid
+Cholic acid
+Ribitol
+Glycylleucine
+Mandelic acid
+4-Hydroxyphenyl acetate
+Isobutyrylglycine
+(S)-Lipoic acid
+Luteolin
+Palmitic acid
+Hydroxyacetone
+Cysteine-S-sulfate
+(+)-Limonene
+D-Lysine
+3'-carboxy-alpha-chromanol
+3-Hexenedioic acid
+(R)-Lipoic acid
+Arabinonic acid
+p-Cresol sulfate
+L-argininium(1+)
+Adipic acid
+3,5-Dimethoxybenzaldehyde
+beta-Glycerophosphoric acid
+Acetylglycine
+Pipecolic acid
+3-Furoic acid
+Erythrono-1,4-lactone
+Imidazolelactic acid
+Glutathionate(1-)
+L-Acetylcarnitine
+Thiamine(1+) Diphosphate(1-)
+beta-Lactose
+4-Ethylphenylsulfate
+Imidazolepropionic acid
+Prostaglandin E2
+Hexanoylglycine
+Guanosine diphosphate
+D-Tagatose
+D-Arabitol
+N-Acetyl-L-alanine
+3-Indoleacetonitrile
+Ureidosuccinic acid
+N-Acetylneuraminic acid
+Valylglycine
+Debrisoquine
+Ethylmalonic acid
+Glyceric acid
+4-Nitrophenyl phosphate
+N1-Methyl-4-pyridone-3-carboxamide
+Glycerol
+Methionine sulfoxide
+Pelargonic acid
+delta-Hexanolactone
+myo-Inositol hexakisphosphate
+Dopamine
+Caproic acid
+Indole-3-carbinol
+Methylphosphate
+DL-Glutamate
+Glycine
+3-Hydroxydodecanoic acid
+Phenylacetic acid
+L-Thyronine
+2-Hydroxy-3-methylbutyric acid
+Ergothioneine
+dTDP
+Selenomethionine
+Eicosapentaenoic acid
+Nicotinamide ribotide
+Phenylalanylglycine
+3-Methyl-2-oxovaleric acid
+Perillyl alcohol
+Malonyl-CoA
+dGTP
+Cytidine triphosphate
+2-Ethylhydracrylic acid
+L-Kynurenine
+Acetyl-CoA
+Phosphoribosyl pyrophosphate
+Prostaglandin F2b
+Homocysteine
+Sphinganine
+Biliverdin
+Uridine diphosphate-N-acetylglucosamine
+Asymmetric dimethylarginine
+(S)-3-Hydroxyisobutyric acid
+Methylcysteine
+Butyrylcarnitine
+Glycerol 3-phosphate
+Propionylglycine
+2-Methoxyestradiol
+3,3'-Diiodothyronine
+25-Hydroxycholesterol
+Chenodeoxycholic acid glycine conjugate
+3-Mercaptopyruvic acid
+5,10-Methenyltetrahydrofolic acid
+6-Keto-prostaglandin F1a
+alpha-Tocopherol
+Linoleic acid
+L-Arabitol
+(S)-3-Hydroxybutyric acid
+Tolbutamide
+Tauroursodeoxycholic acid
+4-Acetamidobutanoic acid
+Nicotinic acid ribonucleoside
+Carveol
+(alpha-D-mannosyl)7-beta-D-mannosyl-diacetylchitobiosyl-L-asparagine, isoform A (protein)
+Lipoamide
+Phenylacetylglycine
+N-alpha-Acetyl-L-lysine
+Alanylleucine
+Coumarin
+dGDP
+2-Hydroxy-3-methylpentanoic acid
+alpha-Dimorphecolic acid
+Geranyl-PP
+Taurochenodesoxycholic acid
+3-(3-Hydroxyphenyl)propanoic acid
+Pyruvaldehyde
+Methylimidazoleacetic acid
+Normetanephrine
+Ribothymidine
+Glutaryl-CoA
+Deoxyribose 1-phosphate
+Orotidylic acid
+Cyclic GMP
+dADP
+gamma-Glutamylvaline
+N8-Acetylspermidine
+(S)-3-Sulfonatolactate
+3,4-Dihydroxyphenylacetaldehyde
+Dihomo-gamma-linolenic acid
+Cholic acid
+Dihydrouracil
+Deoxyguanosine
+Homovanillic acid
+Deoxyuridine
+Hypotaurine
+L-Isoleucine
+Gentisic acid
+Dimethylglycine
+L-Carnitine
+Citrulline
+L-Cysteine
+L-Dopa
+L-Fucose
+Hypoxanthine
+ortho-Hydroxyphenylacetic acid
+L-Histidine
+Cysteic acid
+L-Arginine
+gamma-Aminobutyric acid
+beta-Alanine
+
+Cysteamine
+Thiamine monophosphate
+AICAR
+NAD
+N-Acetylputrescine
+L-Tryptophan
+Tyramine
+5-Methoxytryptamine
+Taurocholic acid
+Xanthurenic acid
+Ureidopropionic acid
+Thymidine
+Glycerophosphocholine
+Creatine
+L-Tyrosine
+Uracil
+Thymine
+Glucaric acid
+L-Valine
+Succinic acid
+D-Galactose
+Inosine
+D-Xylose
+Raffinose
+Urea
+Thiamine
+Guanidoacetic acid
+Gluconic acid
+Sucrose
+Nicotinic acid
+Niacinamide
+D-Maltose
+L-Phenylalanine
+Putrescine
+Riboflavin
+Sarcosine
+Galactitol
+L-Cystine
+Cellobiose
+Citric acid
+Ascorbic acid
+D-Aspartic acid
+L-Glutamic acid
+L-Glutamine
+Gluconolactone
+D-Glucose
+D-Glucurono-6,3-lactone
+L-Alanine
+2-Aminobenzoic acid
+L-Arabinose
+Betaine
+4-Hydroxybenzoic acid
+myo-Inositol
+D-Fructose
+Glycine
+D-Mannose
+Guanosine
+L-Arabitol
+L-Asparagine
+L-Aspartic acid
+Acetylcholine
+Aminoadipic acid
+Biotin
+Pyruvic acid
+Xanthine
+Trehalose
+6-Phosphogluconic acid
+Deoxycytidine
+Caffeine
+Phosphoenolpyruvic acid
+Phosphorylcholine
+Oxalacetic acid
+Carnosine
+cis-Aconitic acid
+Glucose 1-phosphate
+Deoxyinosine
+Dihydroxyacetone phosphate
+Glyoxylic acid
+Deoxyadenosine monophosphate
+ADP
+Thiamine pyrophosphate
+Pyridoxamine
+Mannose 6-phosphate
+Fructose 1,6-bisphosphate
+Iodotyrosine
+Phosphocreatine
+Indolepyruvate
+Pyridoxine
+D-Glycerate 3-phosphate
+3,5-Diiodo-L-tyrosine
+Adenosine triphosphate
+Phosphoribosyl pyrophosphate
+Pyridoxal 5'-phosphate
+O-Phosphoethanolamine
+Pyroglutamic acid
+Pantothenic acid
+Fumaric acid
+Quinolinic acid
+Xanthosine
+O-Phosphohomoserine
+L-Proline
+L-Methionine
+Glucosamine
+Stachyose
+D-Serine
+Uridine
+D-Xylitol
+Choline
+Cadaverine
+Gentisate aldehyde
+Deoxyribose
+Dehydroascorbic acid
+Cytidine
+Ophthalmic acid
+dCTP
+Prostaglandin I2
+Galactosylglycerol
+L-Xylulose
+Dephospho-CoA
+N-Acetylaspartylglutamic acid
+
+Prostaglandin B1
+Prostaglandin J2
+4-Oxo-2-nonenal
+Prostaglandin A2
+Adenosine phosphosulfate
+Ribose 1-phosphate
+Tetrahydrocortisol
+Fucose 1-phosphate
+D-Lactaldehyde
+Glyceraldehyde 3-phosphate
+Propynoic acid
+Caprylic acid
+Adenine
+Benzoic acid
+Cortisone
+Histamine
+3-Hydroxyanthranilic acid
+Pyruvaldehyde
+Hydroxypropionic acid
+Ketoleucine
+D-Mannose 1-phosphate
+Ethanolamine
+1,3-Diaminopropane
+Phenylethylamine
+Oxalic acid
+Malic acid
+Ornithine
+D-Ornithine
+5-Hydroxylysine
+Chenodeoxycholic acid
+Hydroxypyruvic acid
+3,4-Dihydroxybenzeneacetic acid
+Folic acid
+Inosinic acid
+Imidazoleacetic acid
+5-Methoxyindoleacetate
+Guanosine monophosphate
+cis-4-Hydroxy-D-proline
+4-Hydroxyphenylpyruvic acid
+Uridine 5'-monophosphate
+alpha-Ketoisovaleric acid
+Pyridoxal
+Methylmalonic acid
+D-Proline
+L-Gulonolactone
+Indoleacetic acid
+Phenylpyruvic acid
+D-Ribose
+Oxidized glutathione
+Adenosine
+Capric acid
+3,5-Diiodothyronine
+Betaine aldehyde
+N-Acetylserotonin
+Xanthylic acid
+Salsolinol
+Adenosylcobalamin
+myo-Inositol 1,4,5-trisphosphate
+Isovalerylcarnitine
+Isocitric acid
+myo-Inositol 1-phosphate
+NADP
+Sphingosine 1-phosphate
+Propionylcarnitine
+Phenylacetylglycine
+D-Lactic acid
+PA(16:0/16:0)
+
+PS(16:0/16:0)
+PG(18:0/18:0)
+Melibiose
+3,4-Dihydroxymandelic acid
+Sorbitol
+Urocanic acid
+4-Hydroxyproline
+p-Hydroxyphenylacetic acid
+D-Glutamic acid
+Glycocholic acid
+L-Leucine
+Glycolic acid
+Guanine
+Orotic acid
+L-Lysine
+Taurine
+Uric acid
+L-Threonine
+L-Serine
+D-Glutamine
+D-Glucuronic acid
+Adenosine monophosphate
+Agmatine
+N-Acetyl-L-aspartic acid
+3-Methoxyanthranilate
+3-Aminoisobutanoic acid
+Vanillylmandelic acid
+N-Acetylgalactosamine
+4,5-Dihydroorotic acid
+Citraconic acid
+NADH
+Glucosamine 6-phosphate
+Succinylacetone
+2-Oxo-4-methylthiobutanoic acid
+Glutathione
+5,6-Dihydroxyindole
+Deoxyadenosine
+Lysylproline
+Saccharopine
+CDP-ethanolamine
+N,N'-diacetylchitobiose
+Thiamine triphosphate
+Porphobilinogen
+Formiminoglutamic acid
+2-Oxoarginine
+Aspartylglycosamine
+9-cis-Retinoic acid
+10-Formyltetrahydrofolate
+S-Lactoylglutathione
+Acetoacetic acid
+Spermine
+Oxoglutaric acid
+Dopamine
+N-Acetyl-L-glutamic acid
+Cytidine monophosphate
+4-Guanidinobutanoic acid
+Epinephrine
+N-Acetyl-D-glucosamine
+Carbamoyl phosphate
+2'-Deoxyguanosine 5'-monophosphate
+Melatonin
+Folinic acid
+N-Acetylmannosamine
+L-2-Hydroxyglutaric acid
+Acetylphosphate
+Thyroxine
+3-Methoxytyramine
+Formylanthranilic acid
+2-Hydroxybutyric acid
+N2-Acetylornithine
+5-Methyltetrahydrofolic acid
+3-Methylglutaconic acid
+L-Lactic acid
+N-Methylhistamine
+5'-Deoxyadenosine
+
+Spermidine
+Xylulose 5-phosphate
+Coproporphyrin I
+myo-Inositol hexakisphosphate
+Phosphoadenosine phosphosulfate
+Dihydrofolic acid
+Cytidine 5'-monophosphate-N-acetylneuraminic acid
+Thymidine 5'-triphosphate
+Guanosine diphosphate mannose
+S-Adenosylmethionine
+Fructose 6-phosphate
+
+2,3-Diphosphoglyceric acid
+dCMP
+Prolylglycine
+Phosphoserine
+5-Thymidylic acid
+Alpha-Lactose
+
+5'-Methylthioadenosine
+2-Ketobutyric acid
+Deoxyadenosine triphosphate
+N1-Acetylspermine
+Dihydrothymine
+D-Ribose 5-phosphate
+(2E)-Butenoyl-CoA
+Phosphoglycolic acid
+4-Hydroxy-2-oxoglutaric acid
+Isovaleryl-CoA
+Galactose 1-phosphate
+Malondialdehyde
+
+Uridine diphosphate-N-acetylgalactosamine
+alpha-D-Glucose 1,6-bisphosphate
+3-Hydroxy-3-methylglutaryl-CoA
+Orotidine
+2-Phospho-D-glyceric acid
+3-Hydroxybutyryl-CoA
+Fructose 1-phosphate
+Uridine 2',3'-cyclic phosphate
+Pyridoxamine 5'-phosphate
+4-Hydroxy-L-glutamic acid
+2-Deoxyribonic acid
+Melanin
+Mevalonic acid-5P
+3-Sulfopyruvic acid
+D-2-Hydroxyglutaric acid
+N6,N6,N6-Trimethyl-L-lysine
+3-hydroxydecanoyl carnitine
+Farnesyl pyrophosphate
+Acetoacetyl-CoA
+D-Tagatose 6-phosphate
+N-Acetyl-D-Glucosamine 6-Phosphate
+Pantetheine
+N-Acetylmuramate
+Liothyronine
+7,8-Dihydroneopterin
+Metanephrine
+Phosphohydroxypyruvic acid
+Diadenosine tetraphosphate
+D-Ribulose 5-phosphate
+Glucose 6-phosphate
+Diadenosine triphosphate
+Butyryl-CoA
+Maltoheptaose
+Allantoic acid
+Prostaglandin D2
+Deoxyribose 5-phosphate
+3-Methylhistamine
+Propionyl-CoA
+3-Hydroxybutyrylcarnitine
+D-Erythrose 4-phosphate
+N-Acetyl-glucosamine 1-phosphate
+Argininosuccinic acid
+Diketogulonic acid
+Succinylcarnitine
+Succinyl-CoA
+Uridine triphosphate
+Nicotinate adenine dinucleotide phosphate
+D-Sedoheptulose 7-phosphate
+Deoxyuridine triphosphate
+Glyceraldehyde
+Sedoheptulose
+L-Ribulose
+Tetradecanoyl-CoA
+Thromboxane B2
+NADPH
+Ubiquinone-1
+Phosphodimethylethanolamine
+Cysteinylglycine
+Adenylsuccinic acid
+Nicotinic acid mononucleotide
+N2-gamma-Glutamylglutamine
+Tryptophyl-Glycine
+Pyridoxine 5'-phosphate
+Trans-urocanate
+Phosphohydroxypyruvic acid
+D-Xylulose
