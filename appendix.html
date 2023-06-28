@@ -59,59 +59,58 @@ Note that this is a limited PDF or print version; animated and interactive figur
 
 <h3 id="instrumentation">Instrumentation</h3>
 <p>
- We used a Leica DMI8 microscope with a 10x objective and a SpectraX light source to deliver approximately 93 mW/cm<sup>2</sup> or 117 mW/cm<sup>2</sup> power through 470/24 nm or 550/15 nm excitation filters. We used the same quad dichroic (Leica) for all experiments and either a 540/21 nm emission filter to image EGFP or a 705/72 nm for mScarlet. In a typical experiment, we changed the distance between the sample and a 1 cm<sup>3</sup> N42 neodymium magnet every 5 seconds using a servo motor (HS-422) while acquiring 30 ms frames continuously on a PCO edge 4.2 camera with 4x binning. The magnet moved relatively fast (<1 s) controlled by an arduino UNO, and modulated the magnetic field at the sample between ~0 to ~10 mT. The magnet movement and the acquisition was not synchronized, but we attempted to start the traces when the magnet was close to the sample.
+ We used a Leica DMI8 microscope with a 10x objective and a SpectraX light source to deliver 2.5 ms per camera exposure of 1.1 W/cm<sup>2</sup> (TODO) power through 470/24 nm or 550/15 nm excitation filters. We used the same quad dichroic (Leica) for all experiments and either a 540/21 nm emission filter to image green proteins (like EGFP) or a 705/72 nm filter to image red proteins (like mScarlet). In a typical experiment, we move a 1 cm<sup>3</sup> N42 neodymium magnet adjacent to/distant from the sample every 5 seconds using a servo motor (HS-422) while acquiring 2.5 ms camera exposures every 30 ms, continuously on a PCO edge 4.2 camera with 4x4 pixel binning. The magnet moved relatively quickly (&lt;&lt;1 s) controlled by an Arduino UNO, and modulated the magnetic field at the sample between ~0 to ~10 mT (or ~25 mT for <em>E. coli</em> samples). The magnet movement and the acquisition were not synchronized, but we started the traces when the magnet was close to the sample.
 </p>
 
 <h3 id="sample_prep">Sample preparation</h3>
 <p>
- <em>Fluorescent protein coated beads:</em> To make Ni-NTA coated beads, we first transformed T7 Express <em>E. coli</em> (NEB) with pRSET plasmids that encoded fluorescent proteins with an N-terminal 6xHIS tag and selected on LB/Carbenicillin plates. Because we frequently encounter problems with plasmid loss, we inocculate 1 L of LB/Carbenicillin with all of the transformants and grow the liquid culture for ~3 hours at 37 C. After overnight induction with 200 &mu;M IPTG, samples were pelleted, resuspended, and lysed in 50 mM Phosphate buffer pH 8 + 500 mM NaCl with BugBuster. After sample centrifugation, the lysate was incubated with 1 mL of cOmplete Ni-NTA agarose beads (Roche) for 1 hour. The beads were washed 3 times, and stored in 1 ml of 50 mM Phosphate buffer pH 8 + 500 mM NaCl. For imaging, we diluted 0.5 &mu;L of this sample into 100 &mu;L PBS (Corning 21-040-cv) in a 384 glass bottom well plate (Cellvis). Flavinated-EGFP beads were made similarly, except that we co-transformed <em>E. coli</em> with <a href="#sequences" target="_self">pRSET-FP-FlavinTag</a> and a pD881-MR vector (ATUM) encoding the flavin transferase ApbE (<a href="#sequences" target="_self">pRham-StrepTag-ApbE</a>). Growth was carried out with the addition of Carbenicillin/Kanamycin and 50 &mu;M riboflavin, and we induced first with 0.2% rhamnose overnight and then with 200 &mu;M IPTG for 6 hours the next day. To purify mScarlet with a Streptag instead of a 6xHIS, we used streptactin superflow plus beads (Qiagen) instead of Ni-NTA beads. For imaging beads, we used an additional 1.6x magnification lens on the emission path.
+ <strong>Fluorescent protein coated beads:</strong> To attach fluorescent proteins to Ni-NTA-coated beads, we first transformed T7 Express <em>E. coli</em> (NEB) with pRSET plasmids that encoded fluorescent proteins with an N-terminal 6xHIS tag and selected on LB/Carbenicillin plates. Because we frequently encounter problems with plasmid loss, we inocculate 1 L of LB/Carbenicillin with all of the transformants and grow the liquid culture for ~3 hours at 37&deg;C. After overnight induction with 200 &mu;M IPTG, samples were pelleted, resuspended, and lysed in 50 mM phosphate buffer pH 8 + 500 mM NaCl with BugBuster. After sample centrifugation, the lysate was incubated with 1 mL of cOmplete Ni-NTA agarose beads (Roche) for 1 hour. The beads were washed 3 times, and stored in 1 mL of 50 mM phosphate buffer pH 8 + 500 mM NaCl. For imaging, we diluted 0.5 &mu;L of this sample into 100 &mu;L PBS (Corning 21-040-cv) in a 384-well glass bottom plate (Cellvis). Flavinated-EGFP beads were made similarly, except that we co-transformed <em>E. coli</em> with <a href="#sequences" target="_self">pRSET-FP-FlavinTag</a> and a pD881-MR vector (ATUM) encoding the flavin transferase ApbE (<a href="#sequences" target="_self">pRham-StrepTag-ApbE</a>). Growth was carried out with the addition of Carbenicillin/Kanamycin and 50 &mu;M riboflavin, and we induced first with 0.2% rhamnose overnight and then with 200 &mu;M IPTG for 6 hours the next day. To purify mScarlet with a Streptag instead of a 6xHIS, we used streptactin superflow plus beads (Qiagen) instead of Ni-NTA beads. For imaging beads, we used an additional 1.6x magnification lens on the emission path.
 </p>
 <p>
- <em>Metabolite screen:</em> We screened a library of 730 <a href="#screen compounds" target="_self">metabolites</a> [<a class="citation" href="http://doi.org/10.1126/science.abm3452" title="Protein-metabolite interactomics of carbohydrate metabolism reveal regulation of lactate dehydrogenase; Hicks, K.G. et al; Science 379 996-1003(2023)">Hicks 2023</a>] on our microscope set up, using Ni-NTA coated beads and a 1x mag changer, a quad dichroic, a 470/24 nm excitation filter, and a 540/21 nm emission filter for GFP, and 550/15 nm and 705/72 nm for scarlet. We also screened both proteins using the corresponding emission filters, with 405, 470, 560 and 640 nm concomitant illumination, but did not get any additional hits. The metabolites final concentration was 700 &mu;M in PBS.
+ <strong>Metabolite screen:</strong> We screened a library of 730 <a href="#screen compounds" target="_self">metabolites</a> [<a class="citation" href="http://doi.org/10.1126/science.abm3452" title="Protein-metabolite interactomics of carbohydrate metabolism reveal regulation of lactate dehydrogenase; Hicks, K.G. et al; Science 379 996-1003(2023)">Hicks 2023</a>] on our microscope, using protein-coated Ni-NTA beads and a 1x mag changer, a quad dichroic, a 470/24 nm excitation filter, and a 540/21 nm emission filter for GFP, and 550/15 nm and 705/72 nm for mScarlet. We also screened both proteins using the corresponding emission filters, with 405, 470, 560 and 640 nm concomitant illumination, but did not get any additional magnetoresponsive hits. The metabolites' final concentration was 700 &mu;M in PBS.
 </p>
 <p>
- <em>Pure fluorescent protein in solution samples:</em> Purified protein was provided by Wuxi Biortus. 4 &mu;L samples (with final concentrations of 5.1 &mu;M mScarlet or 19 &mu;M EGFP in PBS) were covered with 3 &mu;L mineral oil and imaged in 1536 well glass bottom plates. We used 1536 well glass bottom plates because the FOV covers the whole well and we can ignore diffusion artifacts. Concentrations were determined using extinction coefficients of 55900 M<sup>-1</sup>cm<sup>-1</sup> at 488 nm for EGFP, 100000 M<sup>-1</sup>cm<sup>-1</sup> at 569 nm for mScarlet, and 11300 M<sup>-1</sup>cm<sup>-1</sup> at 450 nm for FAD and FMN. For the other metabolites, we dissolved the powder in either water or DMSO to make 50 mM stocks, depending on their solubility.
+ <strong>Pure fluorescent protein in solution samples:</strong> Purified protein was provided by Wuxi Biortus. 4 &mu;L samples (with final concentrations of 5.1 &mu;M mScarlet or 19 &mu;M EGFP in PBS) were covered with 3 &mu;L mineral oil and imaged in 1536-well glass bottom plates. We used 1536-well glass bottom plates because the field-of-view (FOV) covers the whole well, so diffusion at the FOV-edges is less of a concern. Concentrations were determined using extinction coefficients of 55900 M<sup>-1</sup>cm<sup>-1</sup> at 488 nm for EGFP, 100000 M<sup>-1</sup>cm<sup>-1</sup> at 569 nm for mScarlet, and 11300 M<sup>-1</sup>cm<sup>-1</sup> at 450 nm for FAD and FMN. For the other metabolites, we dissolved the powder in either water or DMSO to make 50 mM stocks, depending on their solubility.
 </p>
 <p id="sample_prep_mam">
- <em>Mammalian cell experiments:</em> We transfected Cos7 cells with <a href="#sequences" target="_self">pCDH plasmids</a> expressing mito-EGFP-FlavinTag and a flavin transferase separated by a T2A sequence in a glass bottom 8-well chamber (Cellvis). Samples were imaged ~48 hours after transfection, using a 40x objective, a 470/24 nm excitation filter, and a 415/30 nm emission filter. The DMEM + 10% FBS (with added glutamax and antibiotics) was replaced with warm imaging solution (Invitrogen A14291DJ) without any additives right before acquisition. The whole microscope was warmed up to 37&deg;C before the start of the experiment, but the incubator turned off while imaging to avoid vibrations. Samples were imaged without supplying CO<sub>2</sub> within an hour of media exchange using a 40x objective. For the experiments with mammalian cells, we used a 515/30 nm emission filter. 
+ <strong>Mammalian cell experiments:</strong> We transfected Cos7 cells with <a href="#sequences" target="_self">pCDH plasmids</a> expressing mito-EGFP-FlavinTag and a flavin transferase separated by a T2A sequence in a glass bottom 8-well chamber (Cellvis). Samples were imaged ~48 hours after transfection, using a 40x objective, a 470/24 nm excitation filter, and a 515/30 nm emission filter. The DMEM + 10% FBS (with added glutamax and antibiotics) was replaced with warm imaging solution (Invitrogen A14291DJ) without any additives right before acquisition. The whole microscope was warmed up to 37&deg;C before the start of the experiment, but the incubator turned off while imaging to avoid vibrations. Samples were imaged without supplying CO<sub>2</sub> within an hour of media exchange. 
 </p>
 <p>
-  We also transfected EGFP-FlavinTag without a flavin transferase, as well as EGFP without a FlavinTag, both in the cytosol and mitochondria. The magnetic field effect on the fluorescence was questionable. We did not perform any optimizations like adding exogenous flavin to the media, establishing the localization of the ApbE enzyme, or adding a gene for overexpression of a flavin synthase [<a class="citation" href="https://doi.org/10.1002/cbic.202200144" title="Broadening the Scope of the Flavin-Tag Method by Improving Flavin Incorporation and Incorporating Flavin Analogs; Tong, Y., Loonstra, M. R., &amp; Fraaije, M. W.; Chembiochem: a European journal of chemical biology 23, e202200144 (2022).">Tong 2022</a>]. We suspect that optimization of these parameters is quite important.
+  We also transfected EGFP-FlavinTag without a flavin transferase, as well as EGFP without a FlavinTag, both in the cytosol and mitochondria. The magnetic field effect on the fluorescence was ambiguous in these samples. We did not perform any optimizations like adding exogenous flavin to the media, establishing the localization of the ApbE enzyme, or adding a gene for overexpression of a flavin synthase [<a class="citation" href="https://doi.org/10.1002/cbic.202200144" title="Broadening the Scope of the Flavin-Tag Method by Improving Flavin Incorporation and Incorporating Flavin Analogs; Tong, Y., Loonstra, M. R., &amp; Fraaije, M. W.; Chembiochem: a European journal of chemical biology 23, e202200144 (2022).">Tong 2022</a>]. We suspect that optimization of these parameters is quite important; just because we didn't see magnetoresponse in these samples doesn't mean it wasn't there.
 </p>
 
 <h3 id="exp_design">Experimental design</h3>
-<p>
-In order to look at magnetic field effects on fluorescence, we added a servo motor on top of a widefield microscope capable of moving a 1 cm<sup>3</sup> square neodymium magnet close and far away from the sample every 5 seconds. A conceptual animation of the experiments is depicted in <a href="./index.html#EGFP_figure">Figure 1</a> of the main text. The magnet remains ~1.5 cm above the sample plane, and the configuration is capable of delivering a magnetic field change between ~0 and ~10 mT. The motor swings relatively fast, in less than one second, controlled by an arduino that is not automatically synchronized with the acquisition. In most experiments, we attempted to start the acquisition when the magnet was close to the sample. 
-</p>
 
 <p>
-All the experimental results presented in the main text, unless stated, are performed with protein immobilized on Ni-NTA beads. These experiments are performed in 100 &mu;L of the relevant cofactor in PBS in a 384 well plate (Cellvis), and the FOV is a small fraction of the whole volume. Experiments with purified protein in solution are presented in the appendix, and are performed in 1536 well plates, which fit in the whole FOV. All <em>in vitro</em> experiments use ~0 to ~10 mT magnetic field changes. However, <em>E. coli</em> samples allowed us to get the magnet closer, so the magnetic field changes between ~0 and ~25 mT. We carried out experiments at room temperature, except those using mammalian cells.
+All the experimental results presented in the main text, unless stated, are performed with protein immobilized on Ni-NTA beads. These experiments are performed in 100 &mu;L of the relevant cofactor/PBS solution in a 384-well plate (Cellvis), and the FOV is a small fraction of the whole volume. Experiments with purified protein in solution are performed in 1536-well plates, which have wells that fit entirely within the FOV. All <em>in vitro</em> experiments use ~0 to ~10 mT magnetic field changes. However, <em>E. coli</em> samples allowed us to get the magnet closer, so the magnetic field changes between ~0 and ~25 mT. If no concentration is specified, it means that the experiments contain 5.1 &mu;M mScarlet, 19.1 &mu;M EGFP, 1000 &mu;M FAD or 500 &mu;M FMN in PBS. We carried out experiments at room temperature, except those using mammalian cells, which were at 37&deg;C.
 </p>
 
 <p id="debugging">
- We would like to address some of the experimental pitfalls that we encountered while looking for magnetic field effects on fluorescence. First, reflection from the magnet produced a very fast and large change in signal that can be mistaken for a magnetic field effect, but this can be avoided by covering the sample with black matte paper. Second, we used an electromagnet to corroborate that we can qualitatively obtain similar traces. This indicates that vibrations from the servo movement or heating from the electromagnet are not likely explanations for the observed behaviour. Third, we used a long working distance air objective to avoid contact with the sample, and the traces are similar whether we use hardware autofocus or not. 
+ We would like to address some of the experimental pitfalls that we encountered while looking for magnetic field effects on fluorescence. First, reflection from the magnet produced a very fast and large change in signal that can be mistaken for a magnetic field effect, but this can be avoided by covering the sample with black matte paper. Second, we used an electromagnet to corroborate that we can qualitatively obtain similar traces. This indicates that vibrations from the servo movement or heating from the electromagnet are not likely explanations for the observed behavior. Third, we used a long working distance (~2 cm TODO) air objective to avoid contact with the sample, and reduce the magnet's ability to pull on the objective. The traces are similar whether we use hardware autofocus or not. 
 </p>
 
 <p>
- We'd also like to highlight few observations/tips for those interested in repeating our results. Start with a 3 to 5 minutes timelapse at the camera framerate and high power, while changing the magnetic field at 5 second intervals. The effects are small and are easy to miss without a repeating pattern to guide the eye. At least for observing magnetic field effects induced by flavins, the emission is not as important as the illumination power, so if camera saturation is a problem, move the emission window instead of decreasing the power. More cofactor is not necessarily better, so testing a few concentrations might be useful. I'd suggest starting with WST-8 (MedChemExpress, HY-D0831), which we dissolved in water to make a 50 mM stock that can be stored frozen at -80&deg;C for at least 6 months. WST-8 works with both EGFP and mScarlet, and unlike flavins, it does not require pre-illumination. To look at mScarlet with flavins, it might be easier to start with 470/560 nm concomitant excitation. It took us a bit of time to get good at observing the modulation, and you might not succeed on the first try. If so, please reach out. 
+ We'd also like to highlight a few observations/tips for those interested in repeating our results. Start with a 3 to 5 minute timelapse at the maximum camera framerate and high power, while changing the magnetic field at 5 second intervals. The effects are small and are easy to miss without a repeating pattern to guide the eye. More cofactor is not necessarily better, so testing a few concentrations might be useful. I'd suggest starting with WST-8 (MedChemExpress, HY-D0831), which we dissolved in water to make a 50 mM stock that can be stored frozen at -80&deg;C for at least 6 months. WST-8 works with both EGFP and mScarlet, and unlike flavins, it does not require pre-illumination. To look at mScarlet with flavins, it might be easier to start with 470/560 nm concomitant excitation. It took us a bit of time to get good at observing the modulation, and you might not succeed on the first try. If so, please reach out. 
 </p>
 
 <h3 id="coli_response"> Magnetic field response of fluorescent proteins in <em>E. coli</em> </h3>
 <p>
-We screened by looking at T7 Express (NEB) cells expressing fluorescent proteins from a pRSET plasmid. A colony was scraped off the LB/ampicillin plate two days after transformation and sandwiched between a coverslip and a multiwell plate optical lid (Cellvis) turned upside-down. We applied different amounts of pressure to each sample in order to maintain maximum power while avoiding saturating the camera. We believe that attempting to excite with high power is important, likely because some metabolites, like FMN, require production of a photo-induced intermediate. Since these samples are very flat, we could get the magnet closer to the FOV, which produced a magnetic field of ~25 mT. For the most part, we looked at proteins that we already had on hand, except for dmCry W394F
-[<a class="citation" href="https://ora.ox.ac.uk/objects/uuid:a0a5ba24-c6dc-47e1-ba59-4feabf118d8b" title="Investigation of Magnetic Field Effects on Protein Photochemistry using Cavity Enhanced Spectroscopy; Zollitsch, T.; PhD thesis, University of Oxford (2018)">Zollitsch 2018</a>], a FAD binding protein with increased transient absorption spectra changes with magnetic field. Among the proteins that we looked at were mCardinal, mCherry, KillerRed, dsRED, mScarlet, pHuji, mVenus, tdVenus, EGFP, StayGold, mCerulean, CyOFP, LSSmOrange2, mMaple, AsLOV V416T C450A, dmCry W394F.
-AsLOV V416T 
+We screened by looking at T7 Express (NEB) cells expressing fluorescent proteins from a pRSET plasmid. A colony was scraped off the LB/carbenicillin plate two days after transformation and sandwiched between a coverslip and a multiwell plate optical lid (Cellvis) turned upside-down. We applied different amounts of pressure to each sample in order to maintain maximum power while avoiding saturating the camera. We believe that high excitation power is important, because some cofactors, like FMN, seem to require production of a photo-induced intermediate. Since these samples are very flat, we could get the magnet closer to the FOV, which produced a magnetic field of ~25 mT. For the most part, we looked at proteins that we already had on hand, except for dmCry W394F
+[<a class="citation" href="https://ora.ox.ac.uk/objects/uuid:a0a5ba24-c6dc-47e1-ba59-4feabf118d8b" title="Investigation of Magnetic Field Effects on Protein Photochemistry using Cavity Enhanced Spectroscopy; Zollitsch, T.; PhD thesis, University of Oxford (2018)">Zollitsch 2018</a>],
+an FAD binding protein with a mutation that reportedly increased transient absorption spectra magnetoresponse. Among the proteins that we looked at were mCardinal, mCherry, KillerRed, dsRED, mScarlet, pHuji, mVenus, tdVenus, EGFP, StayGold, mCerulean, CyOFP, LSSmOrange2, mMaple, AsLOV V416T C450A, dmCry W394F.
+<a href="#sequences" target="_self">AsLOV V416T (residues 404-546)</a>
 [<a class="citation" href="https://doi.org/10.1371/journal.pone.0082693" title="Fluorescence imaging-based high-throughput screening of fast- and slow-cycling LOV proteins; Kawano, F., Aono, Y., Suzuki, H., &amp; Sato, M.; PloS one 8, e82693 (2013)">Kawano 2013</a>]
-is a mutant that we already had, to which we added the C450A mutation
-[<a class="citation" href="https://doi.org/10.1074/jbc.M205509200" title="Blue light perception in plants. Detection and characterization of a light-induced neutral flavin radical in a C450A mutant of phototropin; Kay, C. W., Schleicher, E., Kuppig, A., Hofner, H., Rüdiger, W., Schleicher, M., Fischer, M., Bacher, A., Weber, S., &amp; Richter, G.; The Journal of biological chemistry 278, 10973–10982 (2003)">Kay 2003</a>]. </p>
+is a mutant that we already had, to which we (on a hunch) added the C450A mutation
+[<a class="citation" href="https://doi.org/10.1074/jbc.M205509200" title="Blue light perception in plants. Detection and characterization of a light-induced neutral flavin radical in a C450A mutant of phototropin; Kay, C. W., Schleicher, E., Kuppig, A., Hofner, H., Rüdiger, W., Schleicher, M., Fischer, M., Bacher, A., Weber, S., &amp; Richter, G.; The Journal of biological chemistry 278, 10973–10982 (2003)">Kay 2003</a>],
+which (luckily!) seemed to increase the magnetoresponse. </p>
 
 
-<p>In the green/yellow family, a response could be observed with Venus, EGFP, LOV domain C450A V416T (an FMN binding protein), and dmCry W394F. From the red protein family, mScarlet and dsRed showed a response. Interestingly, mScarlet did not required 470 nm excitation which suggests that the endogenous cofactor in <em>E. coli</em> might not be a flavin. Other proteins did not show a convincing response, but we do not rule out that a modulation might be observed under more favorable conditions (like lower background, higher endogenous cofactor levels, better matched imaging wavelengths, etc). </p> 
+<p>In the green/yellow family, we noticed magnetoresponse from mVenus, tdVenus, EGFP, AsLOV V416T C450A, and dmCry W394F. From the red protein family, we noticed magnetoresponse from mScarlet and dsRed. Interestingly, mScarlet did not require 470 nm excitation which suggests that the endogenous cofactor(s) in <em>E. coli</em> aren't flavins. Other proteins did not show a convincing response, but we do not rule out that a modulation might be observed under more favorable conditions (like lower background, higher endogenous cofactor levels, better matched imaging wavelengths, etc). </p> 
 
-<p>We tested tandem Venus coated beads, and found that FAD restored some of magnetic field response. However, we were unable to observe the upwards slope upon removal of the magnet <em>in vitro</em> unless we supplemented FAD and ascorbic acid
-[<a class="citation" href="https://doi.org/10.1038/nchem.2447" title="Chemical amplification of magnetic field effects relevant to avian magnetoreception; Kattnig, D.R., Evans, E.W., Déjean, V., Dodson, C.A., Wallace, M.I., Mackenzie, S.R., Timmel, C.R. &amp; Hore, P.J.; Nature Chemistry 8 384-391 (2016)">Kattnig 2016</a>]. Because the reaction was very sensitive to relative concentrations of the cofactors, we decided to pursue characterization of EGFP instead, which did not require ascorbic acid to display the upward slope.
+<p>We tested tdVenus-coated beads in PBS, which were not magnetoresponsive, but adding FAD restored weak magnetoresponse. However, FAD <em>and</em> ascorbic acid gave a much stronger magnetoresponse
+[<a class="citation" href="https://doi.org/10.1038/nchem.2447" title="Chemical amplification of magnetic field effects relevant to avian magnetoreception; Kattnig, D.R., Evans, E.W., Déjean, V., Dodson, C.A., Wallace, M.I., Mackenzie, S.R., Timmel, C.R. &amp; Hore, P.J.; Nature Chemistry 8 384-391 (2016)">Kattnig 2016</a>]. Because the reaction was very sensitive to relative concentrations of the cofactors, we decided to pursue characterization of EGFP instead, which displayed a strong magnetoresponse without needing ascorbic acid.
  </p>
-<P>We would also like to note that co-expression of EGFP-FlavinTag and a flavin transferase enzyme in the presence of 50 &mu;M riboflavin dramatically improves the response of EGFP fluorescence to magnetic fields in <em>E. coli</em> (Figure 1, <code>EGFP-FlavinTag</code> selected), although this enhancement did not appear to translate to <a href="#EGFP_TEV_figure" target="_self">purified flavinated EGFP coated beads.</a> </p>
+<P>We would also like to note that co-expressing a flavin transferase enzyme and adding 50 &mu;M riboflavin dramatically improves the magnetoresponse of EGFP-FlavinTag in <em>E. coli</em> (Figure 1, <code>EGFP-FlavinTag</code> selected).</p>
 
 <figure id="coli_figure">
 <img src="./images/e_coli/egfp_trace.png" alt="fluorescent proteins in e coli" id="coli">
@@ -127,76 +126,64 @@ is a mutant that we already had, to which we added the C450A mutation
     <option value="LOV.png">LOV domain C450A V416T</option>
     <option value="venus.png">mVenus</option>
     <option value="tdVenus.png">tdVenus</option>
-   <!-- <option value="cardinal_470_640_700_.png">mCardinal dual excitation</option> -->
-    <!-- <option value="cardinal_640_700_.png">mCardinal</option> -->
-    <!-- <option value="cerrulean_470_515_.png">mCerrulean</option> -->
-    <!-- <option value="cyofp_470_700_.png">CyOFP</option> -->
     <option value="dmcry.png">dmCry W394F</option>
     <option value="dsRed.png">dsRed</option>
-    <!-- <option value="keima_470_560_635em.png">mKeima</option> -->
-    <!--<option value="killerRed_470_560_700em.png">KillerRed</option>-->
-    <!-- <option value="lssorange_470_700.png">lssOrange</option> -->
-    <!-- <option value="mcherry_trace.png">mCherry</option> -->
-    <!-- <option value="mmaple_470_540_.png">mMaple</option> -->
-    <!-- <option value="mmaple_560_635_after_conversion.png">mMaple converted</option> -->
-    <!-- <option value="phuji_470_560_700.png">pHuji</option> -->
-    <!-- <option value="stable_green_.png">StayGold</option> -->
-    <option value="unlabeled_470_540.png">unlabeled 470 ex</option>
-    <option value="unlabeled_470_560_700.png">unlabeled 470/550 ex</option>
-    <option value="unlabeled_560.png">unlabeled 550 ex</option>
+    <option value="unlabeled_470_540.png">No protein, 470 nm ex</option>
+    <option value="unlabeled_470_560_700.png">No protein, 470/550 nm ex</option>
+    <option value="unlabeled_560.png">No protein, 550 nm ex</option>
     </select>
   </td>
  </tr>
 </table>
- <figcaption><strong>Magnetic field effect on the fluorescence of <em>E. coli</em> cells expressing different fluorescent proteins.</strong> We sandwiched <em>E. coli</em> colonies expressing different fluorescent proteins between two optical glass surfaces and imaged continuously while changing the magnetic field between ~0 and ~25 mT. 'Flavinated EGFP' <em>E. coli</em> samples co-express a flavin transferase and are grown on LB plates + 50 &mu;M riboflavin. TODO: fix emission color for dual-exc control
+ <figcaption><strong>Magnetic field effect on the fluorescence of <em>E. coli</em> cells expressing different fluorescent proteins.</strong> We sandwiched <em>E. coli</em> colonies expressing different fluorescent proteins between two optical glass surfaces and imaged continuously while changing the magnetic field between ~0 and ~25 mT. 'Flavinated EGFP' <em>E. coli</em> samples co-express a flavin transferase and are grown on LB plates + 50 &mu;M riboflavin. 
  </figcaption>
 </figure><p></p>
 
 
 <h3 id="scarlet_controls">Additional controls using mScarlet immobilized on beads</h3>
-<p>We performed several controls to try to establish that FMN and mScarlet are the source of the magnetic field change in fluorescence. First, to rule out that the nickel metal from the Ni-NTA beads is somehow involved in the magnetic field response, we switched the 6xHIS tag for a StrepTag, and observed similar results. Second, in order to establish that mScarlet is indeed the source of the fluorescence and it is not merely the flavin accumulating on the bead surface, we deleted tyrosine 66 from mScarlet. Deletion of the chromophore tyrosine can extinguish the fluorescence while maintaining the overall protein fold, at least with Venus (Steven Vogel, personal communication). This experiment also suggests that it is unlikely that we are just observing changes in fluorescence originating only from the cofactor abstracting electrons from the fluorescent protein surface without involvement of the fluorescent protein's chromophore. Also in support of the previous point, we used the FlavinTag to covalently attach a flavin to the C-terminus of mScarlet &#8710;Y66 and observed no modulation by the magnetic field. Eventhough we did not quantify the percent flavination, these beads are visibly yellow, indicating that a substantial fraction of the protein has a flavin attached. We were unable to elicit a magnetic field response in beads with a flavin covalently attached to mScarlet's N- or C- terminus <em>via</em> the FlavinTag, but we do not rule out that a construct with an internal tag or a different linker could achieve this. Finally, and quite interestingly, mScarlet/FAD mixtures do not exhibit a magnetic field response. A possible explanation is that mScarlet binds FMN, but not FAD. </p>
+<p>We performed several controls to try to establish that FMN and mScarlet are the source of the magnetic field change in fluorescence. First, to rule out that the nickel metal from the Ni-NTA beads is somehow involved in the magnetic field response, we switched the 6xHIS tag for a StrepTag and the Ni-NTA beads for streptactin-coated beads, and observed similar results. Second, in order to establish that mScarlet is indeed the source of the fluorescent magnetoresponse and it is not merely the flavin accumulating on the bead surface, we deleted tyrosine 68 from mScarlet; as shown below, this eliminates magnetoresponse in the red channel. Deletion of the chromophore tyrosine extinguishes the fluorescence while maintaining the overall protein fold, (at least with mVenus, Steven Vogel, personal communication), and we believe it has the same effect on mScarlet. This experiment also suggests that it is unlikely that we are just observing changes in fluorescence originating only from the cofactor abstracting electrons from the fluorescent protein surface without involvement of the fluorescent protein's chromophore. Also in support of the previous point, we used the FlavinTag to covalently attach a flavin to the C-terminus of mScarlet and also mScarlet &#8710;Y68 and observed no magnetoresponse. Even though we did not quantify the percent flavination, these beads are visibly yellow, indicating that a substantial fraction of the protein has a flavin attached. Finally, and quite interestingly, mScarlet/FAD mixtures do not exhibit magnetoresponse. A possible explanation is that mScarlet binds FMN, but not FAD. </p>
 
 <figure id="scarlet_beads_control_figure">
 <img src="./images/Scarlet_bead_figure/controls/Figure_dead_FMN.png" alt="Scarlet beads control figure" id="scarlet_beads_control">
 <table class="figure_controls">
   <tr>
   <td>Sample: </td><td><select id="scarlet_beads_control_traces" onchange="update_scarlet_beads_control_figure()">
-    <option value="Figure_dead_FMN.png" selected="selected">mScarlet &#8710;Y66 + FMN </option>
-    <option value="Figure_dead_flavinated.png">Flavinated mScarlet &#8710;Y66</option>
+    <option value="Figure_dead_FMN.png" selected="selected">mScarlet &#8710;Y68 + 500 &mu;M FMN </option>
+    <option value="Figure_dead_flavinated.png">Flavinated mScarlet &#8710;Y68</option>
     <option value="Figure_scarlet_FAD.png">mScarlet beads + FAD</option>
-    <option value="Figure_scarlet_streptag.png">mScarlet StrepTactin beads + FMN</option>
+    <option value="Figure_scarlet_streptag.png">mScarlet StrepTactin beads + &mu;M FMN</option>
   </select></td>
     </tr>
 </table>
- <figcaption><strong>Additional controls using mScarlet-coated beads.</strong> We imaged beads coated with mScarlet &#8710;Y66 in the presence of FMN, and flavinated mScarlet &#8710;Y66, to rule out that the modulatable signal originates from accumulation of FMN on the bead surface or from radical pair formation between the cofactor and mScarlet surface residues. Replacement of FAD for FMN in mScarlet bead samples does not produce magnetic field modulation. Modulation is observed when we use a StrepTactin beads instead of Ni-NTA beads to immobilize mScarlet, suggesting that nickel atoms are not involved in the magnetic field response. 
+ <figcaption><strong>Additional controls using mScarlet-coated beads.</strong>
  </figcaption>
 </figure><p></p>
 
 
-<h3>Additional controls using purified mScarlet protein in solution</h3>
+<h3>Additional controls using purified mScarlet in solution</h3>
 <p>
-  We repeated the experiments from Figure 4 of the main text (which immobilized mScarlet on beads) using pure protein in solution (PBS), in wells small enough to fit in the FOV. This prevents diffusion artifacts from complicating the interpretation of the traces. We observed similar results qualitatively, indicating that the beads are irrelevant to the modulation of fluorescence by the magnetic field, although quantitatively, the amplitude of the response is much lower.
+  We repeated the experiments from <a href="./index.html#scarlet_FMN_figure">Figure 4</a> of the main text (which immobilized mScarlet on beads) using pure protein in solution (PBS), in wells small enough to fit in the FOV. This prevents diffusion artifacts from complicating the interpretation of the traces. We observed similar results qualitatively, indicating that the beads are irrelevant to the modulation of fluorescence by the magnetic field, although quantitatively, the amplitude of the response is lower.
 </p>
 <figure id="scarlet_in_solution_figure">
 <img src="./images/Scarlet_protein/figure_repeat/Figure_scarlet_FMN.png" alt="Scarlet in solution figure" id="scarlet_in_solution">
 <table class="figure_controls">
   <tr>
   <td>Sample: </td><td><select id="scarlet_in_solution_traces" onchange="update_scarlet_in_solution_figure()">
-    <option value="Figure_scarlet_FMN.png" selected="selected">mScarlet + FMN with 470 nm pre-excitation</option>
-    <option value="Figure_scarlet_no488.png">mScarlet + FMN without 470 nm pre-excitation</option>
-    <option value="Figure_FMN_alone.png">FMN alone signal</option>
-    <option value="Figure_scarlet_alone.png">mScarlet alone signal</option>
-    <option value="Figure_scarlet_FAD.png">mScarlet + 1 mM FAD</option>
+    <option value="Figure_scarlet_FMN.png" selected="selected">5.1 &mu;M mScarlet + 500 &mu;M FMN with 470 nm pre-excitation</option>
+    <option value="Figure_scarlet_no488.png">5.1 &mu;M mScarlet + 500 &mu;M FMN without 470 nm pre-excitation</option>
+    <option value="Figure_FMN_alone.png">500 &mu;M FMN alone signal</option>
+    <option value="Figure_scarlet_alone.png">5.1 &mu;M mScarlet alone signal</option>
+    <option value="Figure_scarlet_FAD.png">5.1 &mu;M mScarlet + 1 mM FAD</option>
   </select></td>
     </tr>
 </table>
-  <figcaption><strong>mScarlet protein fluorescence responds to magnetic fields in the presence of FMN if pre-irradiated with 470 nm light.</strong> We imaged purified mScarlet protein in solution in the presence and absence of 500 &mu;M FMN through a 700 nm emission filter. The whole well fit in an FOV, allowing us to ignore diffusion. During the first ~75 seconds, the sample was irradiated with 470 nm light (green shaded background, <em>'mScarlet + FMN with 470 nm pre-excitation'</em> selected) or not irradiated at all (white shaded background, <em>'mScarlet + FMN without 470 nm pre-excitation'</em> selected). After 75 seconds, the sample was imaged continuously with 550 nm excitation (red shaded background). mScarlet alone, FMN alone, and mScarlet + FMN without 470 nm excitation fluorescence show no response to the changes in magnetic field that happen every 5 seconds throught the whole experiment. In contrast, mScarlet + FMN with 470 nm pre-excitation displays changes in fluorescence, which last for several minutes after 470 nM irradiation stops.
+  <figcaption><strong>Like Figure 4 of the main text, but mScarlet is in solution instead of attached to Ni-NTA beads</strong>
  </figcaption>
 </figure><p></p>
 
-<h3>mScarlet: tryptophan mutants on beads</h3>
+<h3>mScarlet tryptophan mutants on beads</h3>
 <p>
-  We mutated each of the three tryptophans present in mScarlet to probe the hypothesis that one of them would provide a path for electron transfer from the chromophore to the surface of the protein. We found that W144 was the only one that changed the magnetic field response compared to wild-type mScarlet. However, this  mutant produces significantly dimmer beads. The change in behaviour makes it the most likely candidate as a radical pair partned, but in the absence of EPR experiments, it is not conclusive. 
+  We mutated each of the three tryptophans present in mScarlet to probe the hypothesis that one of them would provide a path for electron transfer from the chromophore to the surface of the protein. We found that W144 was the only one that changed the magnetoresponse. However, this  mutant produces significantly dimmer beads. We're hesitant to overinterpret this result, but since we have the data, we might as well share it. 
 </p>
 
 <figure id="scarlet_trp_mutants_figure">
@@ -214,9 +201,9 @@ is a mutant that we already had, to which we added the C450A mutation
  </figcaption>
 </figure><p></p>
 
-<h3>Dependence of purified mScarlet protein fluorescence modulation by magnetic fields on FMN concentration</h3>
+<h3>Dependence of mScarlet magnetofluorescence on FMN concentration</h3>
 <p>
-  We used purified mScarlet in solution to determine the dependence of the magnetic field modulation of fluorescence as a function of FMN concentration. As expected, if there is no FMN present, we observe no response to magnetic fields. As we increase the FMN concentration, the time that mScarlet's fluorescence remains magnetic field sensitive increases, as well as the rate of fluorescence change. 
+  We used purified mScarlet in solution to determine the fluorescent magnetoresponse as a function of FMN concentration.
 </p>
 
 <figure id="scarlet_FMN_concentration_figure">
@@ -228,18 +215,18 @@ is a mutant that we already had, to which we added the C450A mutation
     <option value="Figure_125FMN.png">125 &mu;M</option>
     <option value="Figure_250FMN.png">250 &mu;M</option>
     <option value="Figure_500FMN.png">500 &mu;M</option>
-    <option value="Figure_1000FMN.png">1 mM</option>
-    <option value="Figure_2000FMN.png" selected="selected">2 mM</option>
+    <option value="Figure_1000FMN.png">1000 &mu;M</option>
+    <option value="Figure_2000FMN.png" selected="selected">2000 &mu;M</option>
   </select></td>
     </tr>
 </table>
-<figcaption><strong>The magnetic field response of mScarlet fluorescence increases with FMN concentration.</strong> We imaged 5.1 &mu;M purified mScarlet protein in PBS in the presence of increasing concentrations of FMN. The whole well fit in an FOV, allowing us to ignore diffusion. Both the duration of the magnetic field effect after 470 nm pre-irradiation and the rate of fluorescence change increase.
+<figcaption><strong>The magnetic field response of mScarlet fluorescence depends on FMN concentration.</strong> We imaged 5.1 &mu;M purified mScarlet protein in PBS in the presence of increasing concentrations of FMN. The whole well fit in an FOV, allowing us to ignore diffusion.
  </figcaption>
 </figure><p></p>
 
-<h3>mScarlet in solution: 470 nm power dependence</h3>
+<h3>Dependence of mScarlet magnetofluorescence on 470 nm power</h3>
 <p>
-  We used purified mScarlet in solution to determine the dependence of the magnetic field modulation of fluorescence as a function of 470 nm pre-irradiation power. Also as expected, if there is no pre-irradiation, we observe no response to magnetic fields. As we increase the power, the time that mScarlet's fluorescence remains magnetic field sensitive increases.
+  We used purified mScarlet in solution to determine the fluorescent magnetoresponse as a function of 470 nm pre-irradiation power.
 </p>
 
 <figure id="scarlet_green_power_figure">
@@ -255,14 +242,14 @@ is a mutant that we already had, to which we added the C450A mutation
   </select></td>
     </tr>
 </table>
- <figcaption><strong>The magnetic field response of mScarlet fluorescence increases with the power of the 470 nm pre-irradiation step.</strong> We imaged 5.1 &mu;M purified mScarlet protein in PBS in wells that fit in a single FOV in order to ignore diffusion. The power of the 550 nm LED used to image after the pre-irradiation step was held constant.
+ <figcaption><strong>The magnetic field response of mScarlet fluorescence increases with the power of the 470 nm pre-irradiation step.</strong> TODO: fix average/peak power. We imaged 5.1 &mu;M purified mScarlet protein + 500 &mu;M M FMN in PBS in wells that fit in a single FOV in order to ignore diffusion. The power of the 550 nm LED used to image after the pre-irradiation step was held constant.
  </figcaption>
 </figure><p></p>
 
 
-<h3>mScarlet in solution: 550 nm power dependence</h3>
+<h3>Dependence of mScarlet magnetofluorescence on 550 nm power</h3>
 <p>
-  We used purified mScarlet in solution to determine the dependence of the magnetic field modulation of fluorescence as a function of 550 nm imaging power. We observed little dependence other than intensity, as a function of imaging power.
+  We used purified mScarlet in solution to determine the fluorescent magnetoresponse as a function of 550 nm imaging power. We observed little dependence, other than absolute intensity, and photobleaching rates.
 </p>
 <figure id="scarlet_red_power_figure">
 <img src="./images/Scarlet_protein/red_power/Figure_scarlet_FMN_100RedPower.png" alt="Scarlet red power figure" id="scarlet_red_power">
@@ -277,33 +264,33 @@ is a mutant that we already had, to which we added the C450A mutation
   </select></td>
     </tr>
 </table>
-<figcaption><strong>550 nm imaging power does not affect the duration or rate of the magnetic field response of mScarlet.</strong> We imaged 5.1 &mu;M purified mScarlet protein in PBS in wells that fit in a single FOV in order to ignore diffusion with constant pre-irardiation power. Other than intensity, the imaging power does not appear to affect the magnetic field response.
+<figcaption><strong>550 nm imaging power over the range of 16 to 117 mW/cm<sup>2</sup> has little effect on the duration or rate of the magnetic field response of mScarlet.</strong> We imaged 5.1 &mu;M purified mScarlet protein + 500 &mu;M FMN in PBS in wells that fit in a single FOV in order to ignore diffusion. The pre-irradiation 470 nm power was the same in all samples. 
  </figcaption>
 </figure><p></p>
 
-<h3>mScarlet in solution: additional metabolites that can render mScarlet's fluorescence magnetic field sensitive</h3>
+<h3>mScarlet magnetofluorescence with non-flavin cofactors</h3>
 
-<p> At the suggestion of Adam Cohen, we looked for magnetic field effects on mScarlet's fluorescence upon adding WST-8 instead of FMN. WST-8 is a tetrazolium dye used to assess cellular metabolic activity that forms a 460 nm absorbing formazan dye upon reduction. We observed that WST-8 could render mScarlet fluorescence magnetic field sensitive, and that 470 nm pre-excitation was not required.
-  We also used purified beads coated with mScarlet to screen a library of ~730 metabolites. We screened using 550 nm excitation alone with a 700 nm emission filter on two 384 well plates on the same microscope used to carry out experiments. We identified Cinnavalininate, an intermediate in tryptophan metabolism, as an additional compound capable of inducing magnetic field response without the requirement of other excitation wavelengths other than 550 nm. We also re-run the screen with 405/470/550/640 nm excitation, and recovered FMN as a positive hit. Below are the concentration dependences of the fluorescence modulation by magnetic fields for purified mScarlet protein in solution with either WST-8 or cinnavalininate.
+<p> At the suggestion of Adam Cohen, we looked for mScarlet magnetofluorescence with WST-8 as a cofactor instead of FMN. WST-8 is a tetrazolium dye used to assess cellular metabolic activity that forms a 460 nm absorbing formazan dye upon reduction. It works, without needing 470 nm pre-excitation!
+  We also used purified beads coated with mScarlet to screen a library of ~730 <a href="#screen compounds" target="_self">metabolites</a>. We screened using 550 nm excitation and a 700 nm emission filter on two 384-well plates. We identified cinnavalininate, an intermediate in tryptophan metabolism, as an additional cofactor. We also ran the screen with 405/470/550/640 nm excitation, and recovered FMN as a positive hit.
 </p>
 <figure id="scarlet_others_figure">
 <img src="./images/Scarlet_protein/others/cin_30.png" alt="Scarlet others figure" id="scarlet_others">
 <table class="figure_controls">
   <tr>
   <td>Sample: </td><td><select id="scarlet_others_traces" onchange="update_scarlet_others_figure()">
-    <option value="scarlet_alone.png">mScarlet alone</option>
+    <option value="scarlet_alone.png">5.1 &mu;M mScarlet alone</option>
     <option value="cin_0.png">1000 &mu;M cinnavalininate alone</option>
-    <option value="cin_15.png">mScarlet + 15 &mu;M cinnavalininate</option>
-    <option value="cin_30.png" selected="selected">mScarlet + 31 &mu;M cinnavalininate</option>
-    <option value="cin_60.png">mScarlet + 63 &mu;M cinnavalininate</option>
-    <option value="cin_125.png">mScarlet + 125 &mu;M cinnavalininate</option>
-    <option value="cin_250.png">mScarlet + 250 &mu;M cinnavalininate</option>
-    <option value="cin_500.png">mScarlet + 500 &mu;M cinnavalininate</option>
-    <option value="cin_1000.png">mScarlet + 1000 &mu;M cinnavalininate</option>
+    <option value="cin_15.png">5.1 &mu;M mScarlet + 15 &mu;M cinnavalininate</option>
+    <option value="cin_30.png" selected="selected">5.1 &mu;M mScarlet + 31 &mu;M cinnavalininate</option>
+    <option value="cin_60.png">5.1 &mu;M mScarlet + 63 &mu;M cinnavalininate</option>
+    <option value="cin_125.png">5.1 &mu;M mScarlet + 125 &mu;M cinnavalininate</option>
+    <option value="cin_250.png">5.1 &mu;M mScarlet + 250 &mu;M cinnavalininate</option>
+    <option value="cin_500.png">5.1 &mu;M mScarlet + 500 &mu;M cinnavalininate</option>
+    <option value="cin_1000.png">5.1 &mu;M mScarlet + 1000 &mu;M cinnavalininate</option>
   </select></td>
     </tr>
 </table>
- <figcaption><strong>mScarlet purified protein with cinnavalininate.</strong>
+ <figcaption><strong>Magnetic field response of mScarlet/cinnavalininate solutions.</strong> We imaged 5.1 &mu;M mScarlet with varying concentrations of cinnavalininate in 1536 wells. These mixtures did not require 470 nm pre-illumination.
  </figcaption>
 </figure><p></p>
 
@@ -312,25 +299,25 @@ is a mutant that we already had, to which we added the C450A mutation
 <table class="figure_controls">
   <tr>
   <td>Sample: </td><td><select id="scarlet_others_traces_wst" onchange="update_scarlet_others_figure_wst()">
-    <option value="scarlet_alone.png">mScarlet alone</option>
+    <option value="scarlet_alone.png">5.1 &mu;M mScarlet alone</option>
     <option value="wst_0.png">1000 &mu;M WST-8 alone</option>
-    <option value="wst_15.png">mScarlet + 15 &mu;M WST-8</option>
-    <option value="wst_30.png">mScarlet + 31 &mu;M WST-8</option>
-    <option value="wst_60.png">mScarlet + 63 &mu;M WST-8</option>
-    <option value="wst_125.png">mScarlet + 125 &mu;M WST-8</option>
-    <option value="wst_250.png">mScarlet + 250 &mu;M WST-8</option>
-    <option value="wst_500.png">mScarlet + 500 &mu;M WST-8</option>
-    <option value="wst_1000.png" selected="selected">mScarlet + 1000 &mu;M WST-8</option>
+    <option value="wst_15.png">5.1 &mu;M mScarlet + 15 &mu;M WST-8</option>
+    <option value="wst_30.png">5.1 &mu;M mScarlet + 31 &mu;M WST-8</option>
+    <option value="wst_60.png">5.1 &mu;M mScarlet + 63 &mu;M WST-8</option>
+    <option value="wst_125.png">5.1 &mu;M mScarlet + 125 &mu;M WST-8</option>
+    <option value="wst_250.png">5.1 &mu;M mScarlet + 250 &mu;M WST-8</option>
+    <option value="wst_500.png">m5.1 &mu;M mScarlet + 500 &mu;M WST-8</option>
+    <option value="wst_1000.png" selected="selected">5.1 &mu;M mScarlet +  1000 &mu;M WST-8</option>
   </select></td>
     </tr>
 </table>
- <figcaption><strong>mScarlet purified protein with WST-8.</strong>
+ <figcaption><strong>Magnetic field response of mScarlet/WST-8 solutions.</strong> We imaged 5.1 &mu;M mScarlet with varying concentrations of WST-8 in 1536 wells. These mixtures did not require 470 nm pre-illumination.
  </figcaption>
 </figure><p></p>
 
 <h3>Additional controls using EGFP immobilized on beads</h3>
 <p>
- In order to establish that EGFP is indeed the source of the fluorescence and it is not merely originating from the flavin by its accumulation on the bead surface, we deleted tyrosine 66. Deletion of the chromophore tyrosine can extinguish the fluorescence while maintaining the overall protein fold, at least with Venus (Steven Vogel, personal communication). We also covalently attached a flavin to the C-terminus of EGFP∆Y66 and observed no modulation by the magnetic field. Unlike EGFP/FAD mixtures, EGFP/FMN mixtures do not exhibit a magnetic field response, possibly because FMN does not bind. 
+In order to establish that EGFP is indeed the source of the fluorescent magnetoresponse and it is not merely the flavin accumulating on the bead surface, we deleted tyrosine 66 from EGFP; as shown below, this eliminates magnetoresponse in the green channel. Deletion of the chromophore tyrosine extinguishes the fluorescence while maintaining the overall protein fold, (at least with mVenus, Steven Vogel, personal communication), and we believe it has the same effect on EGFP. We also covalently attached a flavin to the C-terminus of EGFP∆Y66 and observed no modulation by the magnetic field. Unlike EGFP/FAD mixtures, EGFP/FMN mixtures do not exhibit a magnetic field response, possibly because FMN does not bind EGFP.
 </p>
 <figure id="EGFP_beads_control_figure">
 <img src="./images/EGFP_bead_figure/controls/Figure_FAD_dead.png" alt="EGFP beads control figure" id="EGFP_beads_control">
@@ -338,61 +325,61 @@ is a mutant that we already had, to which we added the C450A mutation
   <tr>
   <td>Sample: </td><td><select id="EGFP_beads_control_traces" onchange="update_EGFP_beads_control_figure()">
     <option value="Figure_FAD_dead.png" selected="selected">EGFP &#8710;Y66 + FAD</option>
-    <option value="Figure_flavinated_dead.png">flavinated EGFP &#8710;Y66</option>
+    <option value="Figure_flavinated_dead.png">EGFP-FlavinTag &#8710;Y66</option>
     <option value="Figure_FMN.png">EGFP + 1 mM FMN</option>
   </select></td>
     </tr>
 </table>
- <figcaption><strong>Additional controls using EGFP immobilized on beads.</strong> We imaged beads coated with EGFP ∆Y66 in the presence of 1 mM FAD, and flavinated EGFP ∆Y66, to rule out that the modulatable signal originates from accumulation of FAD on the bead surface or from radical pair formation between the cofactor and EGFP surface residues without involvement of the chromophore. Replacement of FMN for FAD does not produce magnetic field modulation. 
+ <figcaption><strong>Additional controls using EGFP immobilized on beads.</strong>
  </figcaption>
 </figure><p></p>
 
-<h3>Additional controls using purified EGFP protein in solution</h3>
+<h3>Additional controls using purified EGFP in solution</h3>
 <p>
-  We repeated the experiments from Figure 1 (which used immobilized EGFP on beads) using pure protein in solution (PBS), in wells small enough to be completely covered in an FOV. This prevents diffusion artifacts from complicating the interpretation of the traces. We observed similar results, indicating that the beads are irrelevant to the modulation of fluorescence by the magnetic field.
+  We repeated the experiments from <a href="./index.html#EGFP_figure">Figure 1</a> (which used immobilized EGFP on beads) using pure protein in solution (PBS), in wells small enough to be completely covered in an FOV. This prevents diffusion artifacts from complicating the interpretation of the traces. We observed similar results, indicating that the beads are irrelevant to the modulation of fluorescence by the magnetic field.
 </p>
 <figure id="EGFP_in_solution_figure">
 <img src="./images/EGFP_protein/figure_repeat/Figure_EGFP_FAD.png" alt="EGFP in solution figure" id="EGFP_in_solution">
 <table class="figure_controls">
   <tr>
   <td>Sample </td><td><select id="EGFP_in_solution_traces" onchange="update_EGFP_in_solution_figure()">
-    <option value="Figure_EGFP_FAD.png" selected="selected">EGFP + FAD</option>
-    <option value="Figure_EGFP.png">EGFP alone</option>
-    <option value="Figure_FAD.png">FAD alone</option>
-    <option value="Figure_EGFP_FMN.png">EGFP + 1 mM FMN</option>
+    <option value="Figure_EGFP_FAD.png" selected="selected">19.1 &mu;M EGFP + 1 mM FAD</option>
+    <option value="Figure_EGFP.png">19.1 &mu;M EGFP alone</option>
+    <option value="Figure_FAD.png">1 mM FAD alone</option>
+    <option value="Figure_EGFP_FMN.png">19.1 &mu;M EGFP + 1 mM FMN</option>
     <option value="Figure_Lysozyme_FAD.png">100 &mu;M Lysozyme + 1 mM FAD</option>
   </select></td>
     </tr>
 </table>
- <figcaption><strong>The fluorescence of EGFP/FAD mixtures in solution responds to changes in magnetic fields.</strong> We imaged 4 &mu;L of PBS with 19 &mu; EGFP + 1 mM FAD, EGFP alone, or FAD alone to corroborate that the results obtained with immobilized beads are reproducible with free protein in solution. We observe that the mixture of protein and flavin display fluorescence that changes with magnetic fields.
+ <figcaption><strong>Like Figure 1 of the main text, but EGFP is in solution instead of attached to Ni-NTA beads or in <em>E. coli</em></strong>
  </figcaption>
 </figure><p></p>
 
-<h3>Dependence of EGFP fluorescence modulation by magnetic fields on FAD concentration
+<h3>Dependence of EGFP magnetofluorescence on FAD concentration
 </h3>
 <p>
-  We used purified EGFP in solution to determine the dependence of the magnetic field modulation of fluorescence as a function of FAD concentration. As expected, we observe no magnetic field modulation of the fluorescence with EGFP alone or FAD alone, while EGFP/FAD mixtures display modulation from the lowest concentration tested to 2 mM. 
+  We used purified EGFP in solution to determine the magnetofluorescent response as a function of FAD concentration.
 <figure id="EGFP_FAD_concentration_figure">
 <img src="./images/EGFP_protein/concentration/Figure_EGFP_0uMMFAD.png" alt="EGFP FAD concentration figure" id="EGFP_FAD_concentration">
 <table class="figure_controls">
   <tr>
   <td>FAD concentration:</td><td><select id="EGFP_FAD_concentration_traces" onchange="update_EGFP_FAD_concentration_figure()">
-    <option value="Figure_EGFP_0uMMFAD.png" selected="selected">EGFP alone</option>
-    <option value="Figure_EGFP_250uMMFAD.png">EGFP + 250 &mu;M FAD</option>
-    <option value="Figure_EGFP_500uMMFAD.png">EGFP + 500 &mu;M FAD</option>
-    <option value="Figure_EGFP_1mMFAD.png">EGFP + 1 mM FAD</option>
-    <option value="Figure_EGFP_2mMFAD.png">EGFP + 2 mM FAD</option>
+    <option value="Figure_EGFP_0uMMFAD.png" selected="selected">19.1 &mu;M EGFP alone</option>
+    <option value="Figure_EGFP_250uMMFAD.png">19.1 &mu;M EGFP + 250 &mu;M FAD</option>
+    <option value="Figure_EGFP_500uMMFAD.png">19.1 &mu;M EGFP + 500 &mu;M FAD</option>
+    <option value="Figure_EGFP_1mMFAD.png">19.1 &mu;M EGFP + 1 mM FAD</option>
+    <option value="Figure_EGFP_2mMFAD.png">19.1 &mu;M EGFP + 2 mM FAD</option>
   </select></td>
     </tr>
 </table>
- <figcaption><strong>FAD concentration dependence.</strong> We imaged 19 &mu;M purified EGFP protein in PBS in the presence of increasing concentrations of FAD. The whole well fit in an FOV, allowing us to ignore diffusion. It is apparent that addition of FAD quenches EGFP fluorescence, and is able to elicit a magnetic field response at all concentrations tested, from 250 &mu;M to 2 mM.
+ <figcaption><strong>The magnetic field response of EGFP fluorescence depends on FAD concentration. </strong> We imaged 19 &mu;M purified EGFP protein in PBS in the presence of increasing concentrations of FAD. The whole well fit in an FOV, allowing us to ignore diffusion. It is apparent that addition of FAD quenches EGFP fluorescence, and is able to elicit a magnetic field response at all concentrations tested, from 250 &mu;M to 2 mM.
 
  </figcaption>
 </figure><p></p>
 
-<h3>Magnetic field response of EGFP/FAD power dependence</h3>
+<h3>Dependence of EGFP magnetofluorescence on 470 nm power</h3>
 <p> 
-We used purified EGFP + 1 mM FAD in solution to determine the dependence of the magnetic field modulation of fluorescence as a function of 470 nm excitation power.
+We used 19.1 &mu;M EGFP + 1 mM FAD in solution to determine the dependence of the magnetic field modulation of fluorescence as a function of 470 nm excitation power.
 </p>
 <figure id="EGFP_power_figure">
 <img src="./images/EGFP_protein/power/Figure_EGFP_100percent.png" alt="EGFP poewer figure" id="EGFP_power">
@@ -412,21 +399,20 @@ We used purified EGFP + 1 mM FAD in solution to determine the dependence of the 
 
 
 
-<h3>Flavinated-EGFP is magnetic field responsive</h3>
+<h3>EGFP-FlavingTag is magnetoresponsive</h3>
 <p>
-  We purified beads with a flavin covalently attached to EGFP by a FlavinTag sequence and co-expression of the ApbE flavin transferase. The sequence between EGFP C-terminus and the FlavinTag also encoded for a TEV protease digestion site. When we imaged these beads, we observed a response to magnetic fields in the absence of exogenous cofactor addition. This response can be abolished by treating the beads with TEV protease.
+  We purified beads with a flavin covalently attached to EGFP by a <a href="#sequences" target="_self">FlavinTag</a> sequence and co-expression of the ApbE flavin transferase. The sequence between the EGFP C-terminus and the FlavinTag also encoded for a TEV protease digestion site. This sample was magnetoresponsive, and TEV protease abolishes the response.
 </p>
 <figure id="EGFP_TEV_figure">
 <img src="./images/EGFP_bead_figure/TEV_protease/protease.png" alt="EGFP TEV figure" id="EGFP_TEV">
- <figcaption><strong>Flavinated EGFP beads' fluorescence is modulatable by changes in magnetic field</strong>
-  Beads coated with EGFP protein with a covalently attached flavin produce fluorescence that is magnetic field sensitive (blue trace). Removal of the FlavinTag using TEV protease renders the beads' fluorescence insensitive to magnetic fields (orange trace). The fluorescence of EGFP increases as we remove the FlavinTag.
+ <figcaption><strong>EGFP-FlavinTag beads' fluorescence is magnetoresponsive.</strong>
+  Beads coated with EGFP with a covalently attached flavin produce fluorescence that is magnetic field sensitive (blue trace). Removal of the FlavinTag using TEV protease renders the beads' fluorescence insensitive to magnetic fields (orange trace). The fluorescence of EGFP increases as we remove the FlavinTag.
  </figcaption>
 </figure><p></p>
 
 
 
-
-<h3>EGFP: additional compounds that can render EGFP fluorescence magnetic field sensitive</h3>
+<h3>EGFP magnetofluorescence with non-flavin cofactors</h3>
 <p>
   We observed that WST-8 dye is able to induce magnetic field modulation of EGFP fluorescence. The metabolite screen also identified several positive hits (cinnavalininate, Hydroxykynurenine, Homogentisic acid, 3-Hydroxyanthranilic acid) as well as recovering FAD as a positive hit.
 </p>
@@ -446,7 +432,7 @@ We used purified EGFP + 1 mM FAD in solution to determine the dependence of the 
   </select></td>
     </tr>
 </table>
- <figcaption><strong>19 &mu;M purified EGFP with cinnavalininate</strong>
+ <figcaption><strong>Magnetic field response of EGFP/cinnavalininate solutions.</strong> We imaged 19.1 &mu;M EGFP with varying concentrations of cinnavalininate in a 1536-well plate.
  </figcaption>
 </figure><p></p>
 
@@ -467,7 +453,7 @@ We used purified EGFP + 1 mM FAD in solution to determine the dependence of the 
   </select></td>
     </tr>
 </table>
- <figcaption><strong>19 &mu;M purified EGFP with 3-hydroxyanthranilic acid.</strong>
+ <figcaption><strong>Magnetic field response of EGFP/3-hydroxyanthranilic acid solutions.</strong> We imaged 19.1 &mu;M EGFP with varying concentrations of 3-hydroxyanthranilic acid in a 1536-well plate.
  </figcaption>
 </figure><p></p>
 
@@ -488,7 +474,7 @@ We used purified EGFP + 1 mM FAD in solution to determine the dependence of the 
   </select></td>
     </tr>
 </table>
- <figcaption><strong>19 &mu;M purified EGFP with hydroxykynurenine.</strong>
+ <figcaption><strong>Magnetic field response of EGFP/hydroxykynurenine solutions.</strong> We imaged 19.1 &mu;M EGFP with varying concentrations of hydroxykynurenine in a 1536-well plate.
  </figcaption>
 </figure><p></p>
 
@@ -509,7 +495,7 @@ We used purified EGFP + 1 mM FAD in solution to determine the dependence of the 
   </select></td>
     </tr>
 </table>
- <figcaption><strong>19 &mu;M purified EGFP with 3-hydroxyanthranilic acid</strong>
+ <figcaption><strong>Magnetic field response of EGFP/WST-8 solutions.</strong> We imaged 19.1 &mu;M EGFP with varying concentrations of WST-8 in a 1536-well plate.
  </figcaption>
 </figure><p></p> 
 
