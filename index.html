@@ -12,13 +12,15 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
     <base target="_blank">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="citation_title" content="Magnetofluorescence">
-    <meta name="citation_author" content="Maria Ingaramo">
+    <meta name="citation_title" content="GFP Magnetofluorescence">
+    <meta name="citation_author" content="Rebecca Frank Hayward">
+    <meta name="citation_author" content="Julia R. Lazzari-Dean">
     <meta name="citation_author" content="Andrew G. York">
-    <meta name="citation_publication_date" content="2023/01/01">
+    <meta name="citation_author" content="Maria Ingaramo">
+    <meta name="citation_publication_date" content="2023/07/12">
     <meta name="citation_journal_title" content="Github.io">
-    <meta name="citation_pdf_url" content="https://andrewgyork.github.io/gfp_magnetofluorescence/Magnetofluorescence.pdf">
-    <title>Magnetofluorescence</title>
+    <meta name="citation_pdf_url" content="https://andrewgyork.github.io/gfp_magnetofluorescence/gfp_magnetofluorescence.pdf">
+    <title>GFP Magnetofluorescence</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/prism.css">
@@ -39,7 +41,7 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Magneto- fluorescence</h1>
+        <h1 class="header">GFP Magneto&shy;fluorescence</h1>
         <ul>
           <li class="download"><a class="buttons" href="https://github.com/AndrewGYork/gfp_magnetofluorescence/archive/refs/heads/main.zip">Download ZIP</a></li>
           <li><a class="buttons github" href="https://github.com/AndrewGYork/gfp_magnetofluorescence">View On GitHub</a></li>
@@ -66,7 +68,7 @@ The real text begins here.
   </h4>
 </a>
 <p class="abstract">
-We've discovered a simple, nontoxic, biocompatible way to control the brightness of <a href="https://www.fpbase.org/protein/avgfp/">GFP</a>-like fluorescent proteins with modest magnetic fields (~10 mT). Fluorescent proteins which seem magnetically inert (e.g. <a href="https://www.fpbase.org/protein/egfp/">EGFP</a>, <a href="https://www.fpbase.org/protein/mscarlet/">mScarlet</a>) become magnetoresponsive in the presence of an appropriate cofactor (e.g. EGFP-<a href="https://doi.org/10.1021/acs.bioconjchem.1c00306">FlavinTag</a>, or an mScarlet/<a href="https://pubchem.ncbi.nlm.nih.gov/compound/Flavin-mononucleotide">FMN</a> solution). This method works at room-temperature and body-temperature, <em>in vitro</em>, in <em>E. coli</em> and in cultured mammalian cells.
+We've discovered a simple, nontoxic, biocompatible way to control the brightness of <a href="https://www.fpbase.org/protein/avgfp/">GFP</a>-like fluorescent proteins via modest magnetic fields (~10 mT). Fluorescent proteins which seem magnetically inert (e.g. <a href="https://www.fpbase.org/protein/egfp/">EGFP</a>, <a href="https://www.fpbase.org/protein/mscarlet/">mScarlet</a>) become magnetoresponsive in the presence of an appropriate cofactor (e.g. EGFP-<a href="https://doi.org/10.1021/acs.bioconjchem.1c00306">FlavinTag</a>, or an mScarlet/<a href="https://pubchem.ncbi.nlm.nih.gov/compound/Flavin-mononucleotide">FMN</a> solution). This method works at room-temperature and body-temperature, <em>in vitro</em>, in <em>E. coli</em> and in cultured mammalian cells.
 </p>
 
 <p class="abstract">
@@ -75,45 +77,15 @@ The GFP-family magnetoresponse is weak (\(\Delta F / F \approx 1\%\)), but shows
 
 <p class="abstract">
 
-We've also discovered weak magnetoresponse from a member of the LOV-domain family. This suggests the possibility that magnetoresponse is a general feature of fluorescent proteins, and not unique to the cryptochrome/photolyase family.
+We've also discovered weak magnetoresponse from a member of the LOV-domain family. This suggests the possibility that magnetoresponse is a general feature of fluorescent proteins, and not unique to the cryptochrome/<wbr>photolyase family.
 </p>
-<!--
-<p class="abstract"> Abstract
-
-
-We discovered a surprisingly easy way to control the brightness of fluorescent proteins with magnetic fields. This raises fascinating scientific questions about the mechanism, and tantalizing technological opportunities for bioengineering.
-
-(first image)
-
-Modest (~mT) fields can give huge (~80%) magnetomodulation for a chemical fluorophore in nonaqueous solvent, but previously known biorelevant/biocompatible magnetoeffects are weak and exotic (e.g. cryptochrome transient absorption).
-doi to nanomagnet Cohen paper, tag @AdamEzraCohen 
-
-(Cohen sup movie 1)
-
-But it turns out, mScarlet mixed with flavin (0.5 mM FMN) is ~2-3% dimmer in a ~10 mT magnetic field - a simple bio-compatible magetically-controlled protein machine!
-
-Other fluorophores (including GFP!) and cofactors (e.g. cinnavalininate instead of flavin) work too.
-
-(scarlet image)
-
-FlavinTagged-GFP gives a convenient, robust biocompatible single-molecule magentofluor (thanks @fraaije1!). Here it is blinking *inside* the mitochondria of a living COS7 cell!
-
-The ~10 mT field is just a strong fridge magnet moved back and forth by an Arduino servo.
-(magnetomito image)
-
-New photophysics unlocks new inventions, like background rejection (blinking magnetofluors vs. nonblinking background) or multiplexing (different mutants equilibrate at different rates). Long-term, we're dreaming of "magnetogenetics": magnetic control of optogenetic circuits!
-
-Different mutants have different magnetoresponse amplitude and rate. We haven't found an effect stronger than ~3% in proteins, but the Cohen work makes us hopeful that this isn't physically impossible. We'd love to engineer the effect to be much stronger. 
-But engineering goes hand in hand with understanding, and we certainly don't yet understand how this works. 
-
- We show that several GFP-like proteins' fluorescence can be modulated by small magnetic fields in the presence of specific cofactors. We identify FMN and Cinnavalininate as small metabolite cofactors for mScarlet, and FAD, Hydroxykynurenine, 3-Hydroxyanthranilic acid and Cinnavalininate as cofactors for EGFP. We also show that magnetic field modulation of fluorescence can be achieved in biological contexts like mammalian cells using a FlavinTag fused to EGFP and co-expression of a flavin transferase. We expect that with further engineering, the <em>in vivo</em> compatibility of the effect will open the door to countless applications like resolution enhancement, imaging in scattering samples, single color multiplexing, optically detected magnetic resonance, and maybe even magneto-genetics. (optically detected electron spin resonance)
-</p>
--->
 
 <h4>Peer review status</h4>
-<p class="abstract">Pre-print published: xx.xx.2023
+<p class="abstract">Pre-print published: July 12, 2023</p>
+<p>
+Aspects of this work have been reproduced independently by the <a href="https://cohenweb.rc.fas.harvard.edu/">Cohen lab</a>; please contact them for details.
 </p>
-<p class="abstract">Cite as: <a href="https://doi.org/10.5281/zenodo.xxxxxxx">doi:10.5281/zenodo.xxxxxxx</a>
+<p class="abstract">Cite as: <a href="https://doi.org/10.5281/zenodo.xxxxxxx">doi:10.5281/zenodo.xxxxxxx (TODO)</a>
 </p>
 
 <p></p>
@@ -411,18 +383,12 @@ All of these questions require deep expertise and years of hard work. The questi
 </p>
 
 
-
-<!--
 <h3>Author Contributions</h3>
-R.F.H. performed experiments. J.R.L.D. contributed to data interpretation and experimental design. A.G.Y. wrote the manuscript and performed data interpretation and conceptualization of the project. M.I. conceptualized and designed the project, performed experiments, interpreted data and drafted the manuscript. 
--->
+R.F.H. performed experiments. J.R.L.D. contributed to data interpretation and experimental design. A.G.Y. wrote the manuscript, interpreted data, and contributed to conceptualization of the project. M.I. conceptualized and designed the project, performed experiments, interpreted data and drafted the manuscript. 
 
-<!--
 <h3>Acknowledgements</h3>
-<p> We thank Alfred Millet-Sikking for help constructing the magnetic field control set up, Ksenia Bravaya for directig us to emap (https://emap.bu.edu/), Shaun Burd for help with controllling electromagnets. We'd like to thank Justin Carram, Yongjia He, Clarice Aiello, Adam Cohen, Hohjai Lee, Dongcheol Park, Daniel Kattnig, Ashok Ajoy, Zachary Jones, the Kasevich lab, Steven Vogel, Steven Boxer, Alessandro Agostini, Andrea Volpato, David Garrett, Peter Maurer, Uri Zvi, Jacob Feder, Ben Soloway, Tim Craggs, Namrata Anand, Jenny Clark for thoughtful discussions and time.
+<p> We thank Alfred Millet-Sikking for help constructing the magnetic field control set up, Ksenia Bravaya for directing us to <a href="https://emap.bu.edu/"><code>emap</code></a>, Shaun Burd for help with controlling electromagnets. We thank Justin Carram, Yongjia He, Clarice Aiello, Adam Cohen, Hohjai Lee, Dongcheol Park, Daniel Kattnig, Ashok Ajoy, Zachary Jones, the Kasevich lab, Steven Vogel, Steven Boxer, Alessandro Agostini, Andrea Volpato, David Garrett, Peter Maurer, Uri Zvi, Jacob Feder, Ben Soloway, Tim Craggs, Namrata Anand, and Jenny Clark for thoughtful discussions and advice.
 </p>
--->
-
 
 
 <h3>
