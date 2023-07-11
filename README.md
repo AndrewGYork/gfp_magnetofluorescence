@@ -1,4 +1,4 @@
-# Relaxation Sensors
+# GFP magnetofluorescence
 
 TODO:<a href="https://doi.org/10.5281/zenodo.xxxxxxx"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxx.svg" alt="DOI"></a>
 
