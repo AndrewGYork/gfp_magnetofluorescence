@@ -59,7 +59,7 @@ Note that this is a limited PDF or print version; animated and interactive figur
 
 <h3 id="instrumentation">Instrumentation</h3>
 <p>
- We used a Leica DMI8 microscope with a 10x objective and a SpectraX light source to deliver 2.5 ms per camera exposure of 1.1 W/cm<sup>2</sup> (TODO) power through 470/24 nm or 550/15 nm excitation filters. We used the same quad dichroic (Leica) for all experiments and either a 540/21 nm emission filter to image green proteins (like EGFP) or a 705/72 nm filter to image red proteins (like mScarlet). In a typical experiment, we move a 1 cm<sup>3</sup> N42 neodymium magnet adjacent to/distant from the sample every 5 seconds using a servo motor (HS-422) while acquiring 2.5 ms camera exposures every 30 ms, continuously on a PCO edge 4.2 camera with 4x4 pixel binning. The magnet moved relatively quickly (&lt;&lt;1 s) controlled by an Arduino UNO, and modulated the magnetic field at the sample between ~0 to ~10 mT (or ~25 mT for <em>E. coli</em> samples). The magnet movement and the acquisition were not synchronized, but we started the traces when the magnet was close to the sample.
+ We used a Leica DMI8 microscope with a 10x objective and a SpectraX light source to deliver 1.7 ms of 1.1 W/cm<sup>2</sup> power per camera exposure through a 470/24 nm excitation filter, or 1.4 W/cm<sup>2</sup> per camera exposure through a 550/15 nm excitation filter every 30 ms. We used the same quad dichroic (Leica) for all experiments and either a 540/21 nm emission filter to image green proteins (like EGFP) or a 705/72 nm filter to image red proteins (like mScarlet). In a typical experiment, we move a 1 cm<sup>3</sup> N42 neodymium magnet adjacent to/distant from the sample every 5 seconds using a servo motor (HS-422) while acquiring 1.7 ms camera exposures every 30 ms, continuously on a PCO edge 4.2 camera with 4x4 pixel binning. The magnet moved relatively quickly (&lt;&lt;1 s) controlled by an Arduino UNO, and modulated the magnetic field at the sample between ~0 to ~10 mT (or ~25 mT for <em>E. coli</em> samples). The magnet movement and the acquisition were not synchronized, but we started the traces when the magnet was close to the sample.
 </p>
 
 <h3 id="sample_prep">Sample preparation</h3>
@@ -235,14 +235,14 @@ which (luckily!) seemed to increase the magnetoresponse. </p>
   <tr>
   <td>470 nm pre-irradiation power: </td><td><select id="scarlet_green_power_traces" onchange="update_scarlet_green_power_figure()">
     <option value="Figure_scarlet_FMN_GreenPower_0Green.png">None</option>
-    <option value="Figure_scarlet_FMN_GreenPower_20Green.png">28 mW/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_GreenPower_40Green.png">51 mW/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_GreenPower_100Green.png" selected="selected">93 mW/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_GreenPower_20Green.png">0.33 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_GreenPower_40Green.png">0.6 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_GreenPower_100Green.png" selected="selected">1.1 W/cm<sup>2</sup></option>
 
   </select></td>
     </tr>
 </table>
- <figcaption><strong>The magnetic field response of mScarlet fluorescence increases with the power of the 470 nm pre-irradiation step.</strong> TODO: fix average/peak power. We imaged 5.1 &mu;M purified mScarlet protein + 500 &mu;M M FMN in PBS in wells that fit in a single FOV in order to ignore diffusion. The power of the 550 nm LED used to image after the pre-irradiation step was held constant.
+ <figcaption><strong>The magnetic field response of mScarlet fluorescence increases with the power of the 470 nm pre-irradiation step.</strong> We imaged 5.1 &mu;M purified mScarlet protein + 500 &mu;M M FMN in PBS in wells that fit in a single FOV in order to ignore diffusion. The power of the 550 nm LED used to image after the pre-irradiation step was held constant.
  </figcaption>
 </figure><p></p>
 
@@ -256,15 +256,15 @@ which (luckily!) seemed to increase the magnetoresponse. </p>
 <table class="figure_controls">
   <tr>
   <td>550 nm imaging power </td><td><select id="scarlet_red_power_traces" onchange="update_scarlet_red_power_figure()">
-    <option value="Figure_scarlet_FMN_100RedPower.png" selected="selected">117 mW/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_40RedPower.png">69 mW/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_20RedPower.png">35 mW/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_10RedPower.png">16 mW/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_100RedPower.png" selected="selected">1.4 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_40RedPower.png">0.82 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_20RedPower.png">0.42 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_10RedPower.png">0.19 W/cm<sup>2</sup></option>
 
   </select></td>
     </tr>
 </table>
-<figcaption><strong>550 nm imaging power over the range of 16 to 117 mW/cm<sup>2</sup> has little effect on the duration or rate of the magnetic field response of mScarlet.</strong> We imaged 5.1 &mu;M purified mScarlet protein + 500 &mu;M FMN in PBS in wells that fit in a single FOV in order to ignore diffusion. The pre-irradiation 470 nm power was the same in all samples. 
+<figcaption><strong>550 nm imaging power over the range of 0.19 to 1.4 W/cm<sup>2</sup> has little effect on the duration or rate of the magnetic field response of mScarlet.</strong> We imaged 5.1 &mu;M purified mScarlet protein + 500 &mu;M FMN in PBS in wells that fit in a single FOV in order to ignore diffusion. The pre-irradiation 470 nm power was the same in all samples. 
  </figcaption>
 </figure><p></p>
 
@@ -386,10 +386,10 @@ We used 19.1 &mu;M EGFP + 1 mM FAD in solution to determine the dependence of th
 <table class="figure_controls">
   <tr>
   <td>power: </td><td><select id="EGFP_power_traces" onchange="update_EGFP_power_figure()">
-    <option value="Figure_EGFP_100percent.png" selected="selected">93 mW/cm<sup>2</sup></option>
-    <option value="Figure_EGFP_40.png">51 mW/cm<sup>2</sup></option>
-    <option value="Figure_EGFP_20.png">28 mW/cm<sup>2</sup></option>
-    <option value="Figure_EGFP_10.png">14 mW/cm<sup>2</sup></option>
+    <option value="Figure_EGFP_100percent.png" selected="selected">1.1 W/cm<sup>2</sup></option>
+    <option value="Figure_EGFP_40.png">0.6 W/cm<sup>2</sup></option>
+    <option value="Figure_EGFP_20.png">0.33 W/cm<sup>2</sup></option>
+    <option value="Figure_EGFP_10.png">0.16 W/cm<sup>2</sup></option>
   </select></td>
     </tr>
 </table>
