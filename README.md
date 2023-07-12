@@ -10,7 +10,7 @@ This repository is intended to hold a (mostly) self-contained scientific publica
 * A (limited) PDF version of the publication; note that this does not include animated/interactive figures.
 * TODO: Code which produces figures (in the `figure_generation` directory). You can run and modify this code to verify and explore our results. See `figure_generation/README.txt` for instructions how to run the figure generation code.
 
-Some files aren't suitable for version control, (e.g. raw data). These are stored in a dedicated repository:
+Some files aren't suitable for version control, (e.g. raw data). These are stored in dedicated repositories:
 
 * https://doi.org/10.5281/zenodo.8136926
 * https://doi.org/10.5281/zenodo.8137092
