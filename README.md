@@ -1,6 +1,6 @@
 # GFP magnetofluorescence
 
-TODO:<a href="https://doi.org/10.5281/zenodo.8137174"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.8137174.svg" alt="DOI"></a>
+<a href="https://doi.org/10.5281/zenodo.8137174"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.8137174.svg" alt="DOI"></a>
 
 A scientific publication that describes a simple, nontoxic, biocompatible way to control the brightness of GFP-like fluorescent proteins via modest magnetic fields (~10 mT). This repository hosts everything you need to reproduce our results. Read the publication here: https://andrewgyork.github.io/gfp_magnetofluorescence (hosted via Andrew York's personal GitHub account) or here: https://marimar128.github.io/gfp_magnetofluorescence (hosted via Maria Ingaramo's personal GitHub account).
 
