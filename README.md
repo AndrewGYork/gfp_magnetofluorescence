@@ -12,7 +12,8 @@ This repository is intended to hold a (mostly) self-contained scientific publica
 
 Some files aren't suitable for version control, (e.g. raw data). These are stored in a dedicated repository:
 
-* TODO: https://doi.org/10.5281/zenodo.xxxxxxx
+* https://doi.org/10.5281/zenodo.8136926
+* https://doi.org/10.5281/zenodo.8137092
 
 Hopefully this makes it easier to manage big, non-text files without risking the faithful version control of small, important text-based files stored here.
 
