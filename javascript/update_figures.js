@@ -9,12 +9,25 @@ function update_EGFP_figure() {
   data_image.src    =    data_filename;
 }
 
+function update_scarlet_cartoon_figure() {
+  var filename = "./images/cartoon/" + document.getElementById("scarlet_cartoon_traces").value; 
+  var image = document.getElementById("scarlet_cartoon");
+  image.src = filename;
+}
 
 function update_scarlet_FMN_figure() {
   var filename = "./images/Scarlet_bead_figure/pngs/" + document.getElementById("scarlet_FMN_traces").value; 
   var image = document.getElementById("scarlet_FMN");
   image.src = filename;
 }
+
+function update_MagLOV_figure() {
+  var filename = "./images/MagLOV_figure/" + document.getElementById("MagLOV_traces").value; 
+  var image = document.getElementById("MagLOV_evolution");
+  image.src = filename;
+}
+
+// Appendix
 
 function update_coli_figure() {
   var filename = "./images/e_coli/" + document.getElementById("coli_traces").value; 
@@ -67,12 +80,6 @@ function update_scarlet_others_figure() {
 function update_scarlet_others_figure_wst() {
   var filename = "./images/Scarlet_protein/others/" + document.getElementById("scarlet_others_traces_wst").value; 
   var image = document.getElementById("scarlet_others_wst");
-  image.src = filename;
-}
-
-function update_scarlet_cartoon_figure() {
-  var filename = "./images/cartoon/" + document.getElementById("scarlet_cartoon_traces").value; 
-  var image = document.getElementById("scarlet_cartoon");
   image.src = filename;
 }
 

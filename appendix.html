@@ -12,7 +12,7 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
     <base target="_blank">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Magnetofluorescence Appendix</title>
+    <title>Protein Magnetofluorescence Appendix</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/prism.css">
@@ -33,7 +33,7 @@ Based on this theme: https://github.com/broccolini/dinky , which mentioned that 
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">GFP Magneto&shy;fluorescence</h1>
+        <h1 class="header">Protein Magneto&shy;fluorescence</h1>
         <ul>
           <li class="download"><a class="buttons" href="https://github.com/AndrewGYork/gfp_magnetofluorescence/archive/refs/heads/main.zip">Download ZIP</a></li>
           <li><a class="buttons github" href="https://github.com/AndrewGYork/gfp_magnetofluorescence">View On GitHub</a></li>
@@ -52,10 +52,10 @@ The real text begins here.
 <h3 class="onlyprint">
 Note that this is a limited PDF or print version; animated and interactive figures are disabled. For the full version of this article, please visit <a href="https://andrewgyork.github.io/gfp_magnetofluorescence">https://andrewgyork.github.io/gfp_magnetofluorescence</a></h3>
 
-<h2>Magnetic control of GFP-like fluorescent proteins</h2>
+<h2>Magnetic control of the brightness of fluorescent proteins</h2>
 <p><a href="./index.html" title="Main text" target="_self">Back to the main text</a></p>
 
-<h3 id="raw data">Raw data</h3>
+<h3 id="raw_data">Raw data</h3>
 <p>
  The raw data used to generate the main text figures is available at <a href="https://doi.org/10.5281/zenodo.8136926">doi.org/10.5281/zenodo.8136926</a> and <a href="https://doi.org/10.5281/zenodo.8137092">doi.org/10.5281/zenodo.8137092</a>
 </p>
@@ -70,7 +70,7 @@ Note that this is a limited PDF or print version; animated and interactive figur
  <strong>Fluorescent protein coated beads:</strong> To attach fluorescent proteins to Ni-NTA-coated beads, we first transformed T7 Express <em>E. coli</em> (NEB) with pRSET plasmids that encoded fluorescent proteins with an N-terminal 6xHIS tag and selected on LB/Carbenicillin plates. Because we frequently encounter problems with plasmid loss, we inoculate 1 L of LB/Carbenicillin with all of the transformants and grow the liquid culture for ~3 hours at 37&deg;C. After overnight induction with 200 &mu;M IPTG, samples were pelleted, resuspended, and lysed in 50 mM phosphate buffer pH 8 + 500 mM NaCl with BugBuster. After sample centrifugation, the lysate was incubated with 1 mL of cOmplete Ni-NTA agarose beads (Roche) for 1 hour. The beads were washed 3 times, and stored in 1 mL of 50 mM phosphate buffer pH 8 + 500 mM NaCl. For imaging, we diluted 0.5 &mu;L of this sample into 100 &mu;L PBS (Corning 21-040-cv) in a 384-well glass bottom plate (Cellvis). Flavinated-EGFP beads were made similarly, except that we co-transformed <em>E. coli</em> with <a href="#sequences" target="_self">pRSET-FP-FlavinTag</a> and a pD881-MR vector (ATUM) encoding the flavin transferase ApbE (<a href="#sequences" target="_self">pRham-StrepTag-ApbE</a>). Growth was carried out with the addition of Carbenicillin/Kanamycin and 50 &mu;M riboflavin, and we induced first with 0.2% rhamnose overnight and then with 200 &mu;M IPTG for 6 hours the next day. To purify mScarlet with a Streptag instead of a 6xHIS, we used streptactin superflow plus beads (Qiagen) instead of Ni-NTA beads. For imaging beads, we used an additional 1.6x magnification lens on the emission path.
 </p>
 <p>
- <strong>Metabolite screen:</strong> We screened a library of 730 <a href="#screen compounds" target="_self">metabolites</a> [<a class="citation" href="http://doi.org/10.1126/science.abm3452" title="Protein-metabolite interactomics of carbohydrate metabolism reveal regulation of lactate dehydrogenase; Hicks, K.G. et al; Science 379 996-1003(2023)">Hicks 2023</a>] on our microscope, using protein-coated Ni-NTA beads and a 1x mag changer, a quad dichroic, a 470/24 nm excitation filter, and a 540/21 nm emission filter for GFP, and 550/15 nm and 705/72 nm for mScarlet. We also screened both proteins using the corresponding emission filters, with 405, 470, 560 and 640 nm concomitant illumination, but did not get any additional magnetoresponsive hits. The metabolites' final concentration was 700 &mu;M in PBS.
+ <strong>Metabolite screen:</strong> We screened a library of 730 <a href="#screen_compounds" target="_self">metabolites</a> [<a class="citation" href="http://doi.org/10.1126/science.abm3452" title="Protein-metabolite interactomics of carbohydrate metabolism reveal regulation of lactate dehydrogenase; Hicks, K.G. et al; Science 379 996-1003(2023)">Hicks 2023</a>] on our microscope, using protein-coated Ni-NTA beads and a 1x mag changer, a quad dichroic, a 470/24 nm excitation filter, and a 540/21 nm emission filter for GFP, and 550/15 nm and 705/72 nm for mScarlet. We also screened both proteins using the corresponding emission filters, with 405, 470, 560 and 640 nm concomitant illumination, but did not get any additional magnetoresponsive hits. The metabolites' final concentration was 700 &mu;M in PBS.
 </p>
 <p>
  <strong>Pure fluorescent protein in solution samples:</strong> Purified protein was provided by Wuxi Biortus. 4 &mu;L samples (with final concentrations of 5.1 &mu;M mScarlet or 19 &mu;M EGFP in PBS) were covered with 3 &mu;L mineral oil and imaged in 1536-well glass bottom plates. We used 1536-well glass bottom plates because the field-of-view (FOV) covers the whole well, so diffusion at the FOV-edges is less of a concern. Concentrations were determined using extinction coefficients of 55900 M<sup>-1</sup>cm<sup>-1</sup> at 488 nm for EGFP, 100000 M<sup>-1</sup>cm<sup>-1</sup> at 569 nm for mScarlet, and 11300 M<sup>-1</sup>cm<sup>-1</sup> at 450 nm for FAD and FMN. For the other metabolites, we dissolved the powder in either water or DMSO to make 50 mM stocks, depending on their solubility.
@@ -100,15 +100,15 @@ All the experimental results presented in the main text, unless stated, are perf
 <p>
 We screened by looking at T7 Express (NEB) cells expressing fluorescent proteins from a pRSET plasmid. A colony was scraped off the LB/carbenicillin plate two days after transformation and sandwiched between a coverslip and a multiwell plate optical lid (Cellvis) turned upside-down. We applied different amounts of pressure to each sample in order to maintain maximum power while avoiding saturating the camera. We believe that high excitation power is important, because some cofactors, like FMN, seem to require production of a photo-induced intermediate. Since these samples are very flat, we could get the magnet closer to the FOV, which produced a magnetic field of ~25 mT. For the most part, we looked at proteins that we already had on hand, except for dmCry W394F
 [<a class="citation" href="https://ora.ox.ac.uk/objects/uuid:a0a5ba24-c6dc-47e1-ba59-4feabf118d8b" title="Investigation of Magnetic Field Effects on Protein Photochemistry using Cavity Enhanced Spectroscopy; Zollitsch, T.; PhD thesis, University of Oxford (2018)">Zollitsch 2018</a>],
-an FAD binding protein with a mutation that reportedly increased transient absorption spectra magnetoresponse. Among the proteins that we looked at were mCardinal, mCherry, KillerRed, dsRED, mScarlet, pHuji, mVenus, tdVenus, EGFP, StayGold, mCerulean, CyOFP, LSSmOrange2, mMaple, AsLOV V416T C450A, dmCry W394F.
-<a href="#sequences" target="_self">AsLOV V416T (residues 404-546)</a>
+an FAD binding protein with a mutation that reportedly increased transient absorption spectra magnetoresponse. Among the proteins that we looked at were mCardinal, mCherry, KillerRed, dsRED, mScarlet, pHuji, mVenus, tdVenus, EGFP, StayGold, mCerulean, CyOFP, LSSmOrange2, mMaple, AsLOV2 V416T C450A, dmCry W394F.
+<a href="#sequences" target="_self">AsLOV2 V416T (residues 404-546)</a>
 [<a class="citation" href="https://doi.org/10.1371/journal.pone.0082693" title="Fluorescence imaging-based high-throughput screening of fast- and slow-cycling LOV proteins; Kawano, F., Aono, Y., Suzuki, H., &amp; Sato, M.; PloS one 8, e82693 (2013)">Kawano 2013</a>]
 is a mutant that we already had, to which we (on a hunch) added the C450A mutation
 [<a class="citation" href="https://doi.org/10.1074/jbc.M205509200" title="Blue light perception in plants. Detection and characterization of a light-induced neutral flavin radical in a C450A mutant of phototropin; Kay, C. W., Schleicher, E., Kuppig, A., Hofner, H., Rüdiger, W., Schleicher, M., Fischer, M., Bacher, A., Weber, S., &amp; Richter, G.; The Journal of biological chemistry 278, 10973–10982 (2003)">Kay 2003</a>],
 which (luckily!) seemed to increase the magnetoresponse. </p>
 
 
-<p>In the green/yellow family, we noticed magnetoresponse from mVenus, tdVenus, EGFP, AsLOV V416T C450A, and dmCry W394F. From the red protein family, we noticed magnetoresponse from mScarlet and dsRed. Interestingly, mScarlet did not require 470 nm excitation which suggests that the endogenous cofactor(s) in <em>E. coli</em> aren't flavins. Other proteins did not show a convincing response, but we do not rule out that a modulation might be observed under more favorable conditions (like lower background, higher endogenous cofactor levels, better matched imaging wavelengths, etc). </p> 
+<p>In the green/yellow family, we noticed magnetoresponse from mVenus, tdVenus, EGFP, AsLOV2 V416T C450A, and dmCry W394F. From the red protein family, we noticed magnetoresponse from mScarlet and dsRed. Interestingly, mScarlet did not require 470 nm excitation which suggests that the endogenous cofactor(s) in <em>E. coli</em> aren't flavins. Other proteins did not show a convincing response, but we do not rule out that a modulation might be observed under more favorable conditions (like lower background, higher endogenous cofactor levels, better matched imaging wavelengths, etc). </p> 
 
 <p>We tested tdVenus-coated beads in PBS, which were not magnetoresponsive, but adding FAD restored weak magnetoresponse. However, FAD <em>and</em> ascorbic acid gave a much stronger magnetoresponse
 [<a class="citation" href="https://doi.org/10.1038/nchem.2447" title="Chemical amplification of magnetic field effects relevant to avian magnetoreception; Kattnig, D.R., Evans, E.W., Déjean, V., Dodson, C.A., Wallace, M.I., Mackenzie, S.R., Timmel, C.R. &amp; Hore, P.J.; Nature Chemistry 8 384-391 (2016)">Kattnig 2016</a>]. Because the reaction was very sensitive to relative concentrations of the cofactors, we decided to pursue characterization of EGFP instead, which displayed a strong magnetoresponse without needing ascorbic acid.
@@ -238,9 +238,9 @@ which (luckily!) seemed to increase the magnetoresponse. </p>
   <tr>
   <td>470 nm pre-irradiation power: </td><td><select id="scarlet_green_power_traces" onchange="update_scarlet_green_power_figure()">
     <option value="Figure_scarlet_FMN_GreenPower_0Green.png">None</option>
-    <option value="Figure_scarlet_FMN_GreenPower_20Green.png">0.33 W/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_GreenPower_40Green.png">0.6 W/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_GreenPower_100Green.png" selected="selected">1.1 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_GreenPower_20Green.png">0.33 W/cm^2</option>
+    <option value="Figure_scarlet_FMN_GreenPower_40Green.png">0.6 W/cm^2</option>
+    <option value="Figure_scarlet_FMN_GreenPower_100Green.png" selected="selected">1.1 W/cm^2</option>
 
   </select></td>
     </tr>
@@ -259,10 +259,10 @@ which (luckily!) seemed to increase the magnetoresponse. </p>
 <table class="figure_controls">
   <tr>
   <td>550 nm imaging power </td><td><select id="scarlet_red_power_traces" onchange="update_scarlet_red_power_figure()">
-    <option value="Figure_scarlet_FMN_100RedPower.png" selected="selected">1.4 W/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_40RedPower.png">0.82 W/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_20RedPower.png">0.42 W/cm<sup>2</sup></option>
-    <option value="Figure_scarlet_FMN_10RedPower.png">0.19 W/cm<sup>2</sup></option>
+    <option value="Figure_scarlet_FMN_100RedPower.png" selected="selected">1.4 W/cm^2</option>
+    <option value="Figure_scarlet_FMN_40RedPower.png">0.82 W/cm^2</option>
+    <option value="Figure_scarlet_FMN_20RedPower.png">0.42 W/cm^2</option>
+    <option value="Figure_scarlet_FMN_10RedPower.png">0.19 W/cm^2</option>
 
   </select></td>
     </tr>
@@ -274,7 +274,7 @@ which (luckily!) seemed to increase the magnetoresponse. </p>
 <h3>mScarlet magnetofluorescence with non-flavin cofactors</h3>
 
 <p> At the suggestion of Adam Cohen, we looked for mScarlet magnetofluorescence with WST-8 as a cofactor instead of FMN. WST-8 is a tetrazolium dye used to assess cellular metabolic activity that forms a 460 nm absorbing formazan dye upon reduction. It works, without needing 470 nm pre-excitation!
-  We also used purified beads coated with mScarlet to screen a library of ~730 <a href="#screen compounds" target="_self">metabolites</a>. We screened using 550 nm excitation and a 700 nm emission filter on two 384-well plates. We identified cinnavalininate, an intermediate in tryptophan metabolism, as an additional cofactor. We also ran the screen with 405/470/550/640 nm excitation, and recovered FMN as a positive hit.
+  We also used purified beads coated with mScarlet to screen a library of ~730 <a href="#screen_compounds" target="_self">metabolites</a>. We screened using 550 nm excitation and a 700 nm emission filter on two 384-well plates. We identified cinnavalininate, an intermediate in tryptophan metabolism, as an additional cofactor. We also ran the screen with 405/470/550/640 nm excitation, and recovered FMN as a positive hit.
 </p>
 <figure id="scarlet_others_figure">
 <img src="./images/Scarlet_protein/others/cin_30.png" alt="Scarlet others figure" id="scarlet_others">
@@ -389,10 +389,10 @@ We used 19.1 &mu;M EGFP + 1 mM FAD in solution to determine the dependence of th
 <table class="figure_controls">
   <tr>
   <td>power: </td><td><select id="EGFP_power_traces" onchange="update_EGFP_power_figure()">
-    <option value="Figure_EGFP_100percent.png" selected="selected">1.1 W/cm<sup>2</sup></option>
-    <option value="Figure_EGFP_40.png">0.6 W/cm<sup>2</sup></option>
-    <option value="Figure_EGFP_20.png">0.33 W/cm<sup>2</sup></option>
-    <option value="Figure_EGFP_10.png">0.16 W/cm<sup>2</sup></option>
+    <option value="Figure_EGFP_100percent.png" selected="selected">1.1 W/cm^2</option>
+    <option value="Figure_EGFP_40.png">0.6 W/cm^2</option>
+    <option value="Figure_EGFP_20.png">0.33 W/cm^2</option>
+    <option value="Figure_EGFP_10.png">0.16 W/cm^2</option>
   </select></td>
     </tr>
 </table>
@@ -503,10 +503,36 @@ We used 19.1 &mu;M EGFP + 1 mM FAD in solution to determine the dependence of th
 </figure><p></p> 
 
 
-<h3 id="screen compounds">
+<h3 id="screen_compounds">
 List of screened compounds:</h3>
 <p>
   <a href="./sequences/screen_compounds.txt"> screen_compounds.txt </a> 
+</p>
+
+<h3 id="MagLOV_engineering">
+Notes on the directed evolution of MagLOV</h3>
+<p>
+We engineered MagLOV using the same strategy we used to engineer <a href="https://andrewgyork.github.io/relaxation_sensors/appendix.html#mutation_history">pH-Countdown</a>
+
+[<a class="citation" href="https://doi.org/10.5281/zenodo.5810930" title="Relaxation Sensors; Peksağlam Seidel, Z. Wang, J.C.K., Riegler, J., York, A.G. and Ingaramo, M.; (2021).">Peksağlam Seidel 2021</a>]. We encourage you to read the linked section of that publication if you're interested in what we tried, and what we learned.
+</p>
+
+<p>
+Briefly, semi-random mutagenesis at every residue is our preferred method for protein engineering. We ordered 284 primers (~$1000), and used them to make all single mutants of AsLOV2 C450A at all locations (2840 mutants). We'd then pool the mutants into a single library, spread the library across 5-10 plates and screen for a winner. After selecting a winner, it costs ~$60 to update the primers for the new champion, which becomes the starting point for the next round of mutagenesis.
+</p>
+  <ul>
+    <li>$1000 on primers may sound expensive, but this works much better than anything else we tried, and is very cheap compared to the cost of labor and the value of our time.</li>
+    <li>The size of this library (10<sup>4</sup> mutants) matches the rough daily throughput of our plate-based screen. In general, the size of one's libraries should relate to the throughput of one's screen.</li>
+    <li>We had great results when we simply reused the same primers for multiple consecutive rounds, rather than updating primers at each round. This probably selected against multiple consecutive nearby mutations, but maybe this is good?</li>
+    <li>We typically observed the strongest magnetoresponse two days after transformation, which we suspect is due to the <em>E. coli</em>'s internal chemical environment. More generally, the amplitude of magnetoresponse depends on many factors, including chemical environment, but also illumination intensity, magnetic field strength, temperature, etc.</li>
+</ul>
+
+<p>
+Our screen used the same <a href="https://andrewgyork.github.io/relaxation_sensors/appendix.html#chicken_blaster">fluorescence photography system</a> from
+
+[<a class="citation" href="https://doi.org/10.5281/zenodo.5810930" title="Relaxation Sensors; Peksağlam Seidel, Z. Wang, J.C.K., Riegler, J., York, A.G. and Ingaramo, M.; (2021).">Peksağlam Seidel 2021</a>].
+
+We added an electromagnet below the sample (Model: KK-P80/10, Kaka Electric), which we turned on and off via an Arduino Uno. For selection, we put agar plates with <em>E. coli</em> directly on top of this electromagnet. For quantification, (e.g. the data in the main text), we transferred the <em>E. coli</em> to nitrocellulose, which allowed better control of the distance between the magnet and the sample.
 </p>
 
 <h3 id="sequences">
@@ -519,11 +545,18 @@ Plasmids and sequences</h3>
 <a href="./sequences/pRham-Streptag-APBE.dna">pRham-Streptag-APBE plasmid Snapgene file. </a><em>E. coli</em> plasmid encoding a flavin transferase; <a href="./sequences/pRham-Streptag-APBE.txt">plain text format</a>
 </p>
 <p>
-<a href="./sequences/pCDH EF1 Mito-EGFP-FLVN-T2A-APBE.dna">pCDH EF1 Mito-EGFP-FLVN-T2A-APBE Snapgene file. </a> Mammalian cell plasmid encoding EGFP-FlavinTag-T2A-ApbE targeted to mitochondria via fusion to the COX8A presequence; <a href="./sequences/pCDH EF1 Mito-EGFP-FLVN-T2A-APBE.txt">plain text format</a
+<a href="./sequences/pCDH%20EF1%20Mito-EGFP-FLVN-T2A-APBE.dna">pCDH EF1 Mito-EGFP-FLVN-T2A-APBE Snapgene file. </a> Mammalian cell plasmid encoding EGFP-FlavinTag-T2A-ApbE targeted to mitochondria via fusion to the COX8A presequence; <a href="./sequences/pCDH%20EF1%20Mito-EGFP-FLVN-T2A-APBE.txt">plain text format</a>
 </p>
 <p>
-<a href="./sequences/pRSET-AsLOV(C450A V416V).dna">pRSET-AsLOV(C450A V416V) Snapgene file. </a><em>E. coli</em> plasmid encoding a mutant of the LOV domain; <a href="./sequences/pRSET-AsLOV(C450A V416V).txt">plain text format</a
+<a href="./sequences/pRSET-AsLOV(C450A%20V416V).dna">pRSET-AsLOV2(C450A V416V) Snapgene file. </a><em>E. coli</em> plasmid encoding a mutant of the LOV domain; <a href="./sequences/pRSET-AsLOV(C450A%20V416V).txt">plain text format</a>
 </p>
+
+<p>
+<a href="./sequences/pRSET%20B-MagLOV.dna">pRSET B-MagLOV Snapgene file. </a><em>E. coli</em> plasmid encoding a magnetically sensitive fluorescent protein engineered from AsLOV2; <a href="./sequences/pRSET%20B-MagLOV.txt">plain text format</a>. Available via Addgene: <a href="https://www.addgene.org/219957/">addgene.org/219957</a>.
+</p>
+
+
+
 <noscript>
 <h3>Your browser doesn't seem to support Javascript. This document uses Javascript to generate a reference list, which would normally be displayed here. Either activate Javascript, or use the "Download PDF" link above if you want to see the reference list.</h3></noscript>
 
